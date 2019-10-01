@@ -19,7 +19,7 @@ Meaning it handles all of the following elements:
 
 It comes with a default Design Accelerator that will enable you to easily test your Nexmosphere device connection within Intuiface Composer.
 
-![Nexmosphere Default Design Accelerator](Screenshots/Nexmosphere-DA.jpg "Nexmosphere Design Accelerator" "width:350px")
+![Nexmosphere Default Design Accelerator](Screenshots/Nexmosphere-DA.jpg "width:350px")
 
 For more information about Nexmosphere and this interface asset, the online article about [using Nexmosphere within Intuiface](https://support.intuiface.com/hc/en-us/articles/360009681439) within the Intuiface Help Center.
 
