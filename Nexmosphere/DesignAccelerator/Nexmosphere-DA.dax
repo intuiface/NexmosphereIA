@@ -1,0 +1,881 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mashup ApiNumber="28" Name="Nexmosphere-DA" Description="Default DA for Nexmosphere" Category="Nexmosphere" Author="Intuiface" AuthorId="Intuiface" Icon="Nexmosphere-DA.png" OriginalLocalPath=".\Local" OriginalDataPath=".\Data" OriginalProcessID="17520" OriginalXpId="1-d996603b-f0a7-425c-b2e5-5499bc158f5a">
+  <MashupPresentation ContextAlias="CURRENT_PRESENTATION" Name="mashup_root_0" OriginalAbsoluteVisualPath="player://visuals/DA Nexmosphere">
+    <Presentation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xi="http://www.w3.org/2001/XInclude" xsi:noNamespaceSchemaLocation="http://schemas.intuilab.com/intuiface/api5/ip.xsd" Name="DA Nexmosphere" Id="" DataPath="" Language="" Width="1920" Height="1080" ShowLoadingIndicator="true" Platform="windows" ComposerVersion="6.4.1" ApiNumber="28" MinApiNumber="28" RequiredPlayerWindows="6.4.0" RequiredPlayerTablet="6.4.0" LastModificationDate="2019-10-01T14:38:10.4610069Z" SnapshotPath="player://data/Snapshots/default.png">
+      <Layers />
+      <Spaces />
+      <SharedContracts />
+      <Converters />
+      <ExternalAssets />
+      <Resources />
+      <Sequence />
+    </Presentation>
+  </MashupPresentation>
+  <MashupSpace ContextAlias="CURRENT_SPACE" Name="mashup_root_1" OriginalAbsoluteVisualPath="player://visuals/DA Nexmosphere/Scene 1">
+    <Space Name="Scene 1" AutoReset="false" />
+  </MashupSpace>
+  <MashupCollection Name="mashup_root_2" OriginalAbsoluteVisualPath="player://visuals/DA Nexmosphere/Scene 1/Layer 1/Default_template_for_Nexmosphere" CreateAsCollectionSibling="true">
+    <Collection Name="Default_template_for_Nexmosphere" Visual="Group" Style="" Container="Static" ContainerStyle="">
+      <Properties>
+        <Property Type="Container" Name="MinWidth"><![CDATA[value:0]]></Property>
+        <Property Type="Container" Name="MinHeight"><![CDATA[value:0]]></Property>
+        <Property Type="Container" Name="MaxWidth"><![CDATA[value:4000]]></Property>
+        <Property Type="Container" Name="MaxHeight"><![CDATA[value:4000]]></Property>
+        <Property Type="Visual" Name="ItemWidth"><![CDATA[value:1200]]></Property>
+        <Property Type="Visual" Name="ItemHeight"><![CDATA[value:600]]></Property>
+        <Property Type="Visual" Name="ShowFeedback"><![CDATA[value:False]]></Property>
+        <Property Type="Container" Name="X"><![CDATA[value:960]]></Property>
+        <Property Type="Container" Name="Y"><![CDATA[value:540]]></Property>
+        <Property Type="Visual" Name="InitialWidth"><![CDATA[value:600]]></Property>
+        <Property Type="Container" Name="Width"><![CDATA[value:600]]></Property>
+        <Property Type="Visual" Name="InitialHeight"><![CDATA[value:940]]></Property>
+        <Property Type="Container" Name="Height"><![CDATA[value:940]]></Property>
+        <Property Type="Container" Name="Orientation"><![CDATA[value:0]]></Property>
+      </Properties>
+      <Asset Name="Background" Visual="DefaultRectangle" Style="" Container="Default" ContainerStyle="" Domain="value:Rectangle">
+        <Properties>
+          <Property Type="Visual" Name="BorderThickness"><![CDATA[value:0]]></Property>
+          <Property Type="Visual" Name="BorderColor"><![CDATA[value:#00000000]]></Property>
+          <Property Type="Visual" Name="CornerRadius"><![CDATA[value:5]]></Property>
+          <Property Type="Visual" Name="BackgroundColor"><![CDATA[value:#D9D1D1D1]]></Property>
+          <Property Type="Container" Name="X"><![CDATA[value:300]]></Property>
+          <Property Type="Container" Name="Y"><![CDATA[value:470]]></Property>
+          <Property Type="Container" Name="Width"><![CDATA[value:600]]></Property>
+          <Property Type="Container" Name="Height"><![CDATA[value:940]]></Property>
+          <Property Type="Container" Name="Orientation"><![CDATA[value:0]]></Property>
+        </Properties>
+      </Asset>
+      <Asset Name="Logo_nexmosphere" Visual="DefaultImage" Style="" Container="Default" ContainerStyle="" Domain="value:Image">
+        <Properties>
+          <Property Type="Domain" Name="Source"><![CDATA[player://resources/17fe7904-af2d-4ce5-9fdb-806752bf053e]]></Property>
+          <Property Type="Container" Name="X"><![CDATA[value:300]]></Property>
+          <Property Type="Container" Name="Y"><![CDATA[value:42]]></Property>
+          <Property Type="Container" Name="Width"><![CDATA[value:269]]></Property>
+          <Property Type="Container" Name="Height"><![CDATA[value:50]]></Property>
+          <Property Type="Container" Name="Orientation"><![CDATA[value:0]]></Property>
+        </Properties>
+      </Asset>
+      <Asset Name="Group separator Title" Visual="DefaultRectangle" Style="" Container="No resize" ContainerStyle="" Domain="value:Rectangle">
+        <Properties>
+          <Property Type="Visual" Name="BorderThickness"><![CDATA[value:0]]></Property>
+          <Property Type="Visual" Name="BorderColor"><![CDATA[value:#00000000]]></Property>
+          <Property Type="Visual" Name="CornerRadius"><![CDATA[value:0]]></Property>
+          <Property Type="Visual" Name="BackgroundColor"><![CDATA[value:#FF343333]]></Property>
+          <Property Type="Container" Name="X"><![CDATA[value:300]]></Property>
+          <Property Type="Container" Name="Y"><![CDATA[value:85]]></Property>
+          <Property Type="Container" Name="Width"><![CDATA[value:600]]></Property>
+          <Property Type="Container" Name="Height"><![CDATA[value:1]]></Property>
+          <Property Type="Container" Name="Orientation"><![CDATA[value:0]]></Property>
+        </Properties>
+      </Asset>
+      <Collection Name="Group Properties" Visual="Group" Style="" Container="Default" ContainerStyle="">
+        <Properties>
+          <Property Type="Container" Name="X"><![CDATA[value:300]]></Property>
+          <Property Type="Container" Name="Y"><![CDATA[value:177]]></Property>
+          <Property Type="Visual" Name="InitialWidth"><![CDATA[value:600]]></Property>
+          <Property Type="Container" Name="Width"><![CDATA[value:600]]></Property>
+          <Property Type="Visual" Name="InitialHeight"><![CDATA[value:183]]></Property>
+          <Property Type="Container" Name="Height"><![CDATA[value:183]]></Property>
+          <Property Type="Container" Name="Orientation"><![CDATA[value:0]]></Property>
+        </Properties>
+        <Asset Name="PROPERTIES" Visual="DefaultText" Style="" Container="Scale" ContainerStyle="" Domain="value:Text">
+          <Properties>
+            <Property Type="Visual" Name="VerticalAlignment"><![CDATA[value:Center]]></Property>
+            <Property Type="Visual" Name="Font"><![CDATA[value:Verdana]]></Property>
+            <Property Type="Visual" Name="FontColor"><![CDATA[value:#FF333333]]></Property>
+            <Property Type="Domain" Name="Text"><![CDATA[value:PROPERTIES]]></Property>
+            <Property Type="Visual" Name="Bold"><![CDATA[value:False]]></Property>
+            <Property Type="Visual" Name="FontSize"><![CDATA[value:20]]></Property>
+            <Property Type="Visual" Name="Alignment"><![CDATA[value:Left]]></Property>
+            <Property Type="Visual" Name="Italic"><![CDATA[value:False]]></Property>
+            <Property Type="Container" Name="X"><![CDATA[value:150]]></Property>
+            <Property Type="Container" Name="Y"><![CDATA[value:23]]></Property>
+            <Property Type="Container" Name="Width"><![CDATA[value:271]]></Property>
+            <Property Type="Container" Name="Height"><![CDATA[value:36]]></Property>
+            <Property Type="Container" Name="Orientation"><![CDATA[value:0]]></Property>
+          </Properties>
+        </Asset>
+        <Asset Name="Label - COM  Serial Port Name" Visual="DefaultText" Container="Scale" ContainerStyle="" Domain="value:Text">
+          <Properties>
+            <Property Type="Visual" Name="FontColor"><![CDATA[value:#FF262626]]></Property>
+            <Property Type="Visual" Name="Font"><![CDATA[value:Verdana]]></Property>
+            <Property Type="Visual" Name="Bold"><![CDATA[value:False]]></Property>
+            <Property Type="Visual" Name="FontSize"><![CDATA[value:14]]></Property>
+            <Property Type="Visual" Name="Alignment"><![CDATA[value:Right]]></Property>
+            <Property Type="Domain" Name="Text"><![CDATA[value:COM / Serial Port Name:]]></Property>
+            <Property Type="Visual" Name="VerticalAlignment"><![CDATA[value:Center]]></Property>
+            <Property Type="Container" Name="X"><![CDATA[value:117]]></Property>
+            <Property Type="Container" Name="Y"><![CDATA[value:60]]></Property>
+            <Property Type="Container" Name="Width"><![CDATA[value:211]]></Property>
+            <Property Type="Container" Name="Height"><![CDATA[value:30]]></Property>
+            <Property Type="Container" Name="Orientation"><![CDATA[value:0]]></Property>
+          </Properties>
+        </Asset>
+        <Asset Name="Value - COM  Serial Port Name" Visual="Text input" Style="" Container="Scale" ContainerStyle="" Domain="value:Text input">
+          <Attachments>
+            <EventTrigger EventType="Visual" EventName="EnterKeyPressed">
+              <InvokeService Target="mashup://visuals/mashup_root_2/Default_template_for_Nexmosphere/Group%20Properties/Value%20-%20COM%20%20Serial%20Port%20Name/" Type="Visual" Name="StopEdition" Delay="value:0.0" />
+            </EventTrigger>
+          </Attachments>
+          <Properties>
+            <Property Type="Domain" Name="Text"><![CDATA[value:COM1]]></Property>
+            <Property Type="Visual" Name="Font"><![CDATA[value:Verdana]]></Property>
+            <Property Type="Visual" Name="FontColor"><![CDATA[value:#FF262626]]></Property>
+            <Property Type="Visual" Name="FontSize"><![CDATA[value:14]]></Property>
+            <Property Type="Visual" Name="InstructionFont">
+              <Typeface>
+                <Family>Segoe UI</Family>
+                <Stretch>normal</Stretch>
+                <Weight>400</Weight>
+                <Style>italic</Style>
+              </Typeface>
+            </Property>
+            <Property Type="Visual" Name="InstructionFontSize"><![CDATA[value:25]]></Property>
+            <Property Type="Visual" Name="Keyboard"><![CDATA[value:UNDEFINED]]></Property>
+            <Property Type="Visual" Name="BackgroundColor"><![CDATA[value:#FFBABABA]]></Property>
+            <Property Type="Visual" Name="EditionBackgroundColor"><![CDATA[value:#FFCFCFCF]]></Property>
+            <Property Type="Visual" Name="InstructionFontColor"><![CDATA[value:#FF848484]]></Property>
+            <Property Type="Visual" Name="InstructionItalic"><![CDATA[value:True]]></Property>
+            <Property Type="Visual" Name="Bold"><![CDATA[value:True]]></Property>
+            <Property Type="Visual" Name="SelectionAreaColor"><![CDATA[value:#FF595959]]></Property>
+            <Property Type="Visual" Name="BorderColor"><![CDATA[value:#FFE8E8E8]]></Property>
+            <Property Type="Visual" Name="EditionBorderColor"><![CDATA[value:#FFE8E8E8]]></Property>
+            <Property Type="Container" Name="X"><![CDATA[value:274]]></Property>
+            <Property Type="Container" Name="Y"><![CDATA[value:60]]></Property>
+            <Property Type="Container" Name="Width"><![CDATA[value:80]]></Property>
+            <Property Type="Container" Name="Height"><![CDATA[value:30]]></Property>
+            <Property Type="Container" Name="Orientation"><![CDATA[value:0]]></Property>
+          </Properties>
+        </Asset>
+        <Asset Name="Label - Auto Reconnect" Visual="DefaultText" Container="Scale" ContainerStyle="" Domain="value:Text">
+          <Properties>
+            <Property Type="Visual" Name="FontColor"><![CDATA[value:#FF262626]]></Property>
+            <Property Type="Visual" Name="Font"><![CDATA[value:Verdana]]></Property>
+            <Property Type="Visual" Name="Bold"><![CDATA[value:False]]></Property>
+            <Property Type="Visual" Name="FontSize"><![CDATA[value:14]]></Property>
+            <Property Type="Visual" Name="Alignment"><![CDATA[value:Right]]></Property>
+            <Property Type="Domain" Name="Text"><![CDATA[value:Auto Reconnect:]]></Property>
+            <Property Type="Visual" Name="VerticalAlignment"><![CDATA[value:Center]]></Property>
+            <Property Type="Container" Name="X"><![CDATA[value:118]]></Property>
+            <Property Type="Container" Name="Y"><![CDATA[value:100]]></Property>
+            <Property Type="Container" Name="Width"><![CDATA[value:210]]></Property>
+            <Property Type="Container" Name="Height"><![CDATA[value:30]]></Property>
+            <Property Type="Container" Name="Orientation"><![CDATA[value:0]]></Property>
+          </Properties>
+        </Asset>
+        <Asset Name="Btn - Auto Reconnect" Visual="ToggleButton" Style="Simple Toggle Button" Container="Scale" ContainerStyle="" Domain="value:ToggleButton">
+          <Properties>
+            <Property Type="Visual" Name="Font"><![CDATA[value:Verdana]]></Property>
+            <Property Type="Visual" Name="FontSize"><![CDATA[value:14]]></Property>
+            <Property Type="Visual" Name="Text"><![CDATA[mashup://visuals/mashup_root_2/Default_template_for_Nexmosphere/Group%20Properties/Btn%20-%20Auto%20Reconnect/DomainComponent/IsChecked]]></Property>
+            <Property Type="Visual" Name="Flat"><![CDATA[value:True]]></Property>
+            <Property Type="Visual" Name="Radius"><![CDATA[value:5]]></Property>
+            <Property Type="Visual" Name="OutlineColor"><![CDATA[value:#FF2B2B2B]]></Property>
+            <Property Type="Visual" Name="BackgroundColor"><![CDATA[value:#FFBABABA]]></Property>
+            <Property Type="Visual" Name="FontColor"><![CDATA[value:#FF262626]]></Property>
+            <Property Type="Visual" Name="PressedVeilColor"><![CDATA[value:#80000000]]></Property>
+            <Property Type="Visual" Name="CheckedVeilColor"><![CDATA[value:#7383D3F6]]></Property>
+            <Property Type="Domain" Name="IsChecked"><![CDATA[value:True]]></Property>
+            <Property Type="Visual" Name="Shadow"><![CDATA[value:False]]></Property>
+            <Property Type="Visual" Name="Bold"><![CDATA[value:True]]></Property>
+            <Property Type="Visual" Name="TextHorizontalAlignment"><![CDATA[value:Center]]></Property>
+            <Property Type="Container" Name="X"><![CDATA[value:274]]></Property>
+            <Property Type="Container" Name="Y"><![CDATA[value:100]]></Property>
+            <Property Type="Container" Name="Width"><![CDATA[value:80]]></Property>
+            <Property Type="Container" Name="Height"><![CDATA[value:30]]></Property>
+            <Property Type="Container" Name="Orientation"><![CDATA[value:0]]></Property>
+          </Properties>
+        </Asset>
+        <Asset Name="Label - Is connected" Visual="DefaultText" Container="Scale" ContainerStyle="" Domain="value:Text">
+          <Properties>
+            <Property Type="Visual" Name="FontColor"><![CDATA[value:#FF262626]]></Property>
+            <Property Type="Visual" Name="Font"><![CDATA[value:Verdana]]></Property>
+            <Property Type="Visual" Name="Bold"><![CDATA[value:False]]></Property>
+            <Property Type="Visual" Name="FontSize"><![CDATA[value:14]]></Property>
+            <Property Type="Visual" Name="Alignment"><![CDATA[value:Right]]></Property>
+            <Property Type="Domain" Name="Text"><![CDATA[value:Is connected:]]></Property>
+            <Property Type="Visual" Name="VerticalAlignment"><![CDATA[value:Center]]></Property>
+            <Property Type="Container" Name="X"><![CDATA[value:118]]></Property>
+            <Property Type="Container" Name="Y"><![CDATA[value:142]]></Property>
+            <Property Type="Container" Name="Width"><![CDATA[value:210]]></Property>
+            <Property Type="Container" Name="Height"><![CDATA[value:30]]></Property>
+            <Property Type="Container" Name="Orientation"><![CDATA[value:0]]></Property>
+          </Properties>
+        </Asset>
+        <Asset Name="Value - Is connected" Visual="DefaultText" Container="Scale" ContainerStyle="" Domain="value:Text">
+          <Properties>
+            <Property Type="Domain" Name="Text"><![CDATA[mashup://externals/Nexmosphere/IsConnected]]></Property>
+            <Property Type="Visual" Name="FontColor"><![CDATA[value:#FF262626]]></Property>
+            <Property Type="Visual" Name="Font"><![CDATA[value:Verdana]]></Property>
+            <Property Type="Visual" Name="Alignment"><![CDATA[value:Left]]></Property>
+            <Property Type="Visual" Name="Bold"><![CDATA[value:True]]></Property>
+            <Property Type="Visual" Name="FontSize"><![CDATA[value:14]]></Property>
+            <Property Type="Visual" Name="VerticalAlignment"><![CDATA[value:Center]]></Property>
+            <Property Type="Container" Name="X"><![CDATA[value:286]]></Property>
+            <Property Type="Container" Name="Y"><![CDATA[value:142]]></Property>
+            <Property Type="Container" Name="Width"><![CDATA[value:102]]></Property>
+            <Property Type="Container" Name="Height"><![CDATA[value:30]]></Property>
+            <Property Type="Container" Name="Orientation"><![CDATA[value:0]]></Property>
+          </Properties>
+        </Asset>
+      </Collection>
+      <Asset Name="Group separator Top" Visual="DefaultRectangle" Style="" Container="No resize" ContainerStyle="" Domain="value:Rectangle">
+        <Properties>
+          <Property Type="Visual" Name="BorderThickness"><![CDATA[value:0]]></Property>
+          <Property Type="Visual" Name="BorderColor"><![CDATA[value:#00000000]]></Property>
+          <Property Type="Visual" Name="CornerRadius"><![CDATA[value:0]]></Property>
+          <Property Type="Visual" Name="BackgroundColor"><![CDATA[value:#D9343333]]></Property>
+          <Property Type="Container" Name="X"><![CDATA[value:300]]></Property>
+          <Property Type="Container" Name="Y"><![CDATA[value:268]]></Property>
+          <Property Type="Container" Name="Width"><![CDATA[value:600]]></Property>
+          <Property Type="Container" Name="Height"><![CDATA[value:1]]></Property>
+          <Property Type="Container" Name="Orientation"><![CDATA[value:0]]></Property>
+        </Properties>
+      </Asset>
+      <Collection Name="Group Actions" Visual="Group" Style="" Container="Default" ContainerStyle="">
+        <Properties>
+          <Property Type="Container" Name="X"><![CDATA[value:300]]></Property>
+          <Property Type="Container" Name="Y"><![CDATA[value:433]]></Property>
+          <Property Type="Visual" Name="InitialWidth"><![CDATA[value:600]]></Property>
+          <Property Type="Container" Name="Width"><![CDATA[value:600]]></Property>
+          <Property Type="Visual" Name="InitialHeight"><![CDATA[value:332]]></Property>
+          <Property Type="Container" Name="Height"><![CDATA[value:332]]></Property>
+          <Property Type="Container" Name="Orientation"><![CDATA[value:0]]></Property>
+        </Properties>
+        <Asset Name="ACTIONS" Visual="DefaultText" Style="" Container="Scale" ContainerStyle="" Domain="value:Text">
+          <Properties>
+            <Property Type="Visual" Name="VerticalAlignment"><![CDATA[value:Center]]></Property>
+            <Property Type="Visual" Name="Font"><![CDATA[value:Verdana]]></Property>
+            <Property Type="Visual" Name="FontColor"><![CDATA[value:#FF333333]]></Property>
+            <Property Type="Domain" Name="Text"><![CDATA[value:ACTIONS]]></Property>
+            <Property Type="Visual" Name="Bold"><![CDATA[value:False]]></Property>
+            <Property Type="Visual" Name="FontSize"><![CDATA[value:20]]></Property>
+            <Property Type="Visual" Name="Alignment"><![CDATA[value:Left]]></Property>
+            <Property Type="Visual" Name="Italic"><![CDATA[value:False]]></Property>
+            <Property Type="Container" Name="X"><![CDATA[value:152]]></Property>
+            <Property Type="Container" Name="Y"><![CDATA[value:26]]></Property>
+            <Property Type="Container" Name="Width"><![CDATA[value:271]]></Property>
+            <Property Type="Container" Name="Height"><![CDATA[value:36]]></Property>
+            <Property Type="Container" Name="Orientation"><![CDATA[value:0]]></Property>
+          </Properties>
+        </Asset>
+        <Asset Name="Connect the Nexmosph" Visual="DefaultText" Container="Scale" ContainerStyle="" Domain="value:Text">
+          <Properties>
+            <Property Type="Visual" Name="FontColor"><![CDATA[value:#FF262626]]></Property>
+            <Property Type="Visual" Name="Font"><![CDATA[value:Verdana]]></Property>
+            <Property Type="Visual" Name="Bold"><![CDATA[value:False]]></Property>
+            <Property Type="Visual" Name="FontSize"><![CDATA[value:14]]></Property>
+            <Property Type="Visual" Name="Alignment"><![CDATA[value:Right]]></Property>
+            <Property Type="Domain" Name="Text"><![CDATA[value:Connect the Nexmosphere device:]]></Property>
+            <Property Type="Visual" Name="VerticalAlignment"><![CDATA[value:Center]]></Property>
+            <Property Type="Container" Name="X"><![CDATA[value:158]]></Property>
+            <Property Type="Container" Name="Y"><![CDATA[value:58]]></Property>
+            <Property Type="Container" Name="Width"><![CDATA[value:288]]></Property>
+            <Property Type="Container" Name="Height"><![CDATA[value:30]]></Property>
+            <Property Type="Container" Name="Orientation"><![CDATA[value:0]]></Property>
+          </Properties>
+        </Asset>
+        <Asset Name="Connect" Visual="Button" Style="Simple button" Container="Default" ContainerStyle="" Domain="value:VisibleTrigger">
+          <Attachments>
+            <EventTrigger EventType="Visual" EventName="Released">
+              <InvokeService Target="mashup://externals/Nexmosphere/" Type="Domain" Name="OpenSerialPort" Delay="value:0" />
+            </EventTrigger>
+          </Attachments>
+          <Properties>
+            <Property Type="Visual" Name="Font">
+              <Typeface>
+                <Family>Segoe UI</Family>
+                <Stretch>normal</Stretch>
+                <Weight>400</Weight>
+                <Style>normal</Style>
+              </Typeface>
+            </Property>
+            <Property Type="Visual" Name="FontSize"><![CDATA[value:14]]></Property>
+            <Property Type="Visual" Name="Text"><![CDATA[value:Connect ]]></Property>
+            <Property Type="Visual" Name="BackgroundColor"><![CDATA[value:#FFFAFAFA]]></Property>
+            <Property Type="Visual" Name="Radius"><![CDATA[value:5]]></Property>
+            <Property Type="Visual" Name="Flat"><![CDATA[value:True]]></Property>
+            <Property Type="Visual" Name="PressedVeilColor"><![CDATA[value:#80000000]]></Property>
+            <Property Type="Visual" Name="FontColor"><![CDATA[value:#FF000000]]></Property>
+            <Property Type="Visual" Name="OutlineColor"><![CDATA[value:#FF2B2B2B]]></Property>
+            <Property Type="Visual" Name="LineWrap"><![CDATA[value:True]]></Property>
+            <Property Type="Container" Name="X"><![CDATA[value:366]]></Property>
+            <Property Type="Container" Name="Y"><![CDATA[value:58]]></Property>
+            <Property Type="Container" Name="Width"><![CDATA[value:80]]></Property>
+            <Property Type="Container" Name="Height"><![CDATA[value:30]]></Property>
+            <Property Type="Container" Name="Orientation"><![CDATA[value:0]]></Property>
+          </Properties>
+        </Asset>
+        <Asset Name="Disconnect the Nexmo" Visual="DefaultText" Container="Scale" ContainerStyle="" Domain="value:Text">
+          <Properties>
+            <Property Type="Visual" Name="FontColor"><![CDATA[value:#FF262626]]></Property>
+            <Property Type="Visual" Name="Font"><![CDATA[value:Verdana]]></Property>
+            <Property Type="Visual" Name="Bold"><![CDATA[value:False]]></Property>
+            <Property Type="Visual" Name="FontSize"><![CDATA[value:14]]></Property>
+            <Property Type="Visual" Name="Alignment"><![CDATA[value:Right]]></Property>
+            <Property Type="Domain" Name="Text"><![CDATA[value:Disconnect the Nexmosphere device:]]></Property>
+            <Property Type="Visual" Name="VerticalAlignment"><![CDATA[value:Center]]></Property>
+            <Property Type="Container" Name="X"><![CDATA[value:158]]></Property>
+            <Property Type="Container" Name="Y"><![CDATA[value:102]]></Property>
+            <Property Type="Container" Name="Width"><![CDATA[value:288]]></Property>
+            <Property Type="Container" Name="Height"><![CDATA[value:30]]></Property>
+            <Property Type="Container" Name="Orientation"><![CDATA[value:0]]></Property>
+          </Properties>
+        </Asset>
+        <Asset Name="Disconnect" Visual="Button" Style="Simple button" Container="Default" ContainerStyle="" Domain="value:VisibleTrigger">
+          <Attachments>
+            <EventTrigger EventType="Visual" EventName="Released">
+              <InvokeService Target="mashup://externals/Nexmosphere/" Type="Domain" Name="CloseSerialPort" Delay="value:0" />
+            </EventTrigger>
+          </Attachments>
+          <Properties>
+            <Property Type="Visual" Name="Font">
+              <Typeface>
+                <Family>Segoe UI</Family>
+                <Stretch>normal</Stretch>
+                <Weight>400</Weight>
+                <Style>normal</Style>
+              </Typeface>
+            </Property>
+            <Property Type="Visual" Name="FontSize"><![CDATA[value:14]]></Property>
+            <Property Type="Visual" Name="Text"><![CDATA[value:Disconnect]]></Property>
+            <Property Type="Visual" Name="BackgroundColor"><![CDATA[value:#FFFAFAFA]]></Property>
+            <Property Type="Visual" Name="Radius"><![CDATA[value:5]]></Property>
+            <Property Type="Visual" Name="Flat"><![CDATA[value:True]]></Property>
+            <Property Type="Visual" Name="PressedVeilColor"><![CDATA[value:#80000000]]></Property>
+            <Property Type="Visual" Name="FontColor"><![CDATA[value:#FF000000]]></Property>
+            <Property Type="Visual" Name="OutlineColor"><![CDATA[value:#FF2B2B2B]]></Property>
+            <Property Type="Visual" Name="LineWrap"><![CDATA[value:True]]></Property>
+            <Property Type="Container" Name="X"><![CDATA[value:366]]></Property>
+            <Property Type="Container" Name="Y"><![CDATA[value:102]]></Property>
+            <Property Type="Container" Name="Width"><![CDATA[value:80]]></Property>
+            <Property Type="Container" Name="Height"><![CDATA[value:30]]></Property>
+            <Property Type="Container" Name="Orientation"><![CDATA[value:0]]></Property>
+          </Properties>
+        </Asset>
+        <Asset Name="Send a full line X-Script command" Visual="DefaultText" Container="Scale" ContainerStyle="" Domain="value:Text">
+          <Properties>
+            <Property Type="Visual" Name="FontColor"><![CDATA[value:#FF262626]]></Property>
+            <Property Type="Visual" Name="Font"><![CDATA[value:Verdana]]></Property>
+            <Property Type="Visual" Name="Bold"><![CDATA[value:False]]></Property>
+            <Property Type="Visual" Name="FontSize"><![CDATA[value:14]]></Property>
+            <Property Type="Visual" Name="Alignment"><![CDATA[value:Right]]></Property>
+            <Property Type="Domain" Name="Text"><![CDATA[value:Send a full line X-Script command:]]></Property>
+            <Property Type="Visual" Name="VerticalAlignment"><![CDATA[value:Center]]></Property>
+            <Property Type="Container" Name="X"><![CDATA[value:156]]></Property>
+            <Property Type="Container" Name="Y"><![CDATA[value:150]]></Property>
+            <Property Type="Container" Name="Width"><![CDATA[value:288]]></Property>
+            <Property Type="Container" Name="Height"><![CDATA[value:30]]></Property>
+            <Property Type="Container" Name="Orientation"><![CDATA[value:0]]></Property>
+          </Properties>
+        </Asset>
+        <Asset Name="Text Input - X-Script Command line" Visual="Text input" Style="" Container="Scale" ContainerStyle="" Domain="value:Text input">
+          <Attachments>
+            <EventTrigger EventType="Visual" EventName="EnterKeyPressed">
+              <InvokeService Target="mashup://visuals/mashup_root_2/Default_template_for_Nexmosphere/Group%20Actions/Text%20Input%20-%20X-Script%20Command%20line/" Type="Visual" Name="StopEdition" Delay="value:0.0" />
+            </EventTrigger>
+          </Attachments>
+          <Properties>
+            <Property Type="Domain" Name="Text"><![CDATA[value:X002B[399C1801020C180018]]]></Property>
+            <Property Type="Visual" Name="Font"><![CDATA[value:Verdana]]></Property>
+            <Property Type="Visual" Name="FontColor"><![CDATA[value:#FF262626]]></Property>
+            <Property Type="Visual" Name="FontSize"><![CDATA[value:14]]></Property>
+            <Property Type="Visual" Name="InstructionFont">
+              <Typeface>
+                <Family>Segoe UI</Family>
+                <Stretch>normal</Stretch>
+                <Weight>400</Weight>
+                <Style>italic</Style>
+              </Typeface>
+            </Property>
+            <Property Type="Visual" Name="InstructionFontSize"><![CDATA[value:25]]></Property>
+            <Property Type="Visual" Name="Keyboard"><![CDATA[value:UNDEFINED]]></Property>
+            <Property Type="Visual" Name="BackgroundColor"><![CDATA[value:#FFBABABA]]></Property>
+            <Property Type="Visual" Name="EditionBackgroundColor"><![CDATA[value:#FFCFCFCF]]></Property>
+            <Property Type="Visual" Name="InstructionFontColor"><![CDATA[value:#FF848484]]></Property>
+            <Property Type="Visual" Name="InstructionItalic"><![CDATA[value:True]]></Property>
+            <Property Type="Visual" Name="SelectionAreaColor"><![CDATA[value:#FF595959]]></Property>
+            <Property Type="Visual" Name="Bold"><![CDATA[value:True]]></Property>
+            <Property Type="Visual" Name="BorderColor"><![CDATA[value:#FFE8E8E8]]></Property>
+            <Property Type="Visual" Name="EditionBorderColor"><![CDATA[value:#FFE8E8E8]]></Property>
+            <Property Type="Container" Name="X"><![CDATA[value:276]]></Property>
+            <Property Type="Container" Name="Y"><![CDATA[value:184]]></Property>
+            <Property Type="Container" Name="Width"><![CDATA[value:303]]></Property>
+            <Property Type="Container" Name="Height"><![CDATA[value:30]]></Property>
+            <Property Type="Container" Name="Orientation"><![CDATA[value:0]]></Property>
+          </Properties>
+        </Asset>
+        <Asset Name="Btn - Send X-Script Command line" Visual="Button" Style="Simple button" Container="Default" ContainerStyle="" Domain="value:VisibleTrigger">
+          <Attachments>
+            <EventTrigger EventType="Visual" EventName="Released">
+              <InvokeService Target="mashup://externals/Nexmosphere/" Type="Domain" Name="SendXScriptCommand_FullLine" Delay="value:0">
+                <ServiceValueParameter ParamName="XScriptCommand" Value="mashup://visuals/mashup_root_2/Default_template_for_Nexmosphere/Group%20Actions/Text%20Input%20-%20X-Script%20Command%20line/DomainComponent/Text" />
+              </InvokeService>
+            </EventTrigger>
+          </Attachments>
+          <Properties>
+            <Property Type="Visual" Name="Font">
+              <Typeface>
+                <Family>Segoe UI</Family>
+                <Stretch>normal</Stretch>
+                <Weight>400</Weight>
+                <Style>normal</Style>
+              </Typeface>
+            </Property>
+            <Property Type="Visual" Name="FontSize"><![CDATA[value:14]]></Property>
+            <Property Type="Visual" Name="Text"><![CDATA[value:Send]]></Property>
+            <Property Type="Visual" Name="BackgroundColor"><![CDATA[value:#FFFAFAFA]]></Property>
+            <Property Type="Visual" Name="Radius"><![CDATA[value:5]]></Property>
+            <Property Type="Visual" Name="Flat"><![CDATA[value:True]]></Property>
+            <Property Type="Visual" Name="PressedVeilColor"><![CDATA[value:#80000000]]></Property>
+            <Property Type="Visual" Name="FontColor"><![CDATA[value:#FF000000]]></Property>
+            <Property Type="Visual" Name="OutlineColor"><![CDATA[value:#FF2B2B2B]]></Property>
+            <Property Type="Visual" Name="LineWrap"><![CDATA[value:True]]></Property>
+            <Property Type="Container" Name="X"><![CDATA[value:506]]></Property>
+            <Property Type="Container" Name="Y"><![CDATA[value:180]]></Property>
+            <Property Type="Container" Name="Width"><![CDATA[value:80]]></Property>
+            <Property Type="Container" Name="Height"><![CDATA[value:30]]></Property>
+            <Property Type="Container" Name="Orientation"><![CDATA[value:0]]></Property>
+          </Properties>
+        </Asset>
+        <Asset Name="Send X-Script command structure" Visual="DefaultText" Container="Scale" ContainerStyle="" Domain="value:Text">
+          <Properties>
+            <Property Type="Visual" Name="FontColor"><![CDATA[value:#FF262626]]></Property>
+            <Property Type="Visual" Name="Font"><![CDATA[value:Verdana]]></Property>
+            <Property Type="Visual" Name="Bold"><![CDATA[value:False]]></Property>
+            <Property Type="Visual" Name="FontSize"><![CDATA[value:14]]></Property>
+            <Property Type="Visual" Name="Alignment"><![CDATA[value:Right]]></Property>
+            <Property Type="Domain" Name="Text"><![CDATA[value:Send X-Script command structure:]]></Property>
+            <Property Type="Visual" Name="VerticalAlignment"><![CDATA[value:Center]]></Property>
+            <Property Type="Container" Name="X"><![CDATA[value:156]]></Property>
+            <Property Type="Container" Name="Y"><![CDATA[value:233]]></Property>
+            <Property Type="Container" Name="Width"><![CDATA[value:288]]></Property>
+            <Property Type="Container" Name="Height"><![CDATA[value:30]]></Property>
+            <Property Type="Container" Name="Orientation"><![CDATA[value:0]]></Property>
+          </Properties>
+        </Asset>
+        <Collection Name="Group X-Script command structure" Visual="Group" Style="" Container="Default" ContainerStyle="">
+          <Properties>
+            <Property Type="Container" Name="X"><![CDATA[value:260]]></Property>
+            <Property Type="Container" Name="Y"><![CDATA[value:265]]></Property>
+            <Property Type="Visual" Name="InitialWidth"><![CDATA[value:350]]></Property>
+            <Property Type="Container" Name="Width"><![CDATA[value:350]]></Property>
+            <Property Type="Visual" Name="InitialHeight"><![CDATA[value:30]]></Property>
+            <Property Type="Container" Name="Height"><![CDATA[value:30]]></Property>
+            <Property Type="Container" Name="Orientation"><![CDATA[value:0]]></Property>
+          </Properties>
+          <Asset Name="[" Visual="DefaultText" Container="Scale" ContainerStyle="" Domain="value:Text">
+            <Properties>
+              <Property Type="Visual" Name="FontColor"><![CDATA[value:#FF262626]]></Property>
+              <Property Type="Visual" Name="Font"><![CDATA[value:Verdana]]></Property>
+              <Property Type="Visual" Name="Bold"><![CDATA[value:False]]></Property>
+              <Property Type="Visual" Name="FontSize"><![CDATA[value:16]]></Property>
+              <Property Type="Visual" Name="Alignment"><![CDATA[value:Center]]></Property>
+              <Property Type="Domain" Name="Text"><![CDATA[value:[]]></Property>
+              <Property Type="Visual" Name="VerticalAlignment"><![CDATA[value:Center]]></Property>
+              <Property Type="Container" Name="X"><![CDATA[value:122]]></Property>
+              <Property Type="Container" Name="Y"><![CDATA[value:15]]></Property>
+              <Property Type="Container" Name="Width"><![CDATA[value:12]]></Property>
+              <Property Type="Container" Name="Height"><![CDATA[value:30]]></Property>
+              <Property Type="Container" Name="Orientation"><![CDATA[value:0]]></Property>
+            </Properties>
+          </Asset>
+          <Asset Name="]" Visual="DefaultText" Container="Scale" ContainerStyle="" Domain="value:Text">
+            <Properties>
+              <Property Type="Visual" Name="FontColor"><![CDATA[value:#FF262626]]></Property>
+              <Property Type="Visual" Name="Font"><![CDATA[value:Verdana]]></Property>
+              <Property Type="Visual" Name="Bold"><![CDATA[value:False]]></Property>
+              <Property Type="Visual" Name="FontSize"><![CDATA[value:16]]></Property>
+              <Property Type="Visual" Name="Alignment"><![CDATA[value:Center]]></Property>
+              <Property Type="Domain" Name="Text"><![CDATA[value:]]]></Property>
+              <Property Type="Visual" Name="VerticalAlignment"><![CDATA[value:Center]]></Property>
+              <Property Type="Container" Name="X"><![CDATA[value:344]]></Property>
+              <Property Type="Container" Name="Y"><![CDATA[value:15]]></Property>
+              <Property Type="Container" Name="Width"><![CDATA[value:12]]></Property>
+              <Property Type="Container" Name="Height"><![CDATA[value:30]]></Property>
+              <Property Type="Container" Name="Orientation"><![CDATA[value:0]]></Property>
+            </Properties>
+          </Asset>
+          <Asset Name="Text Input - COMMAND" Visual="Text input" Style="" Container="Scale" ContainerStyle="" Domain="value:Text input">
+            <Attachments>
+              <EventTrigger EventType="Visual" EventName="EnterKeyPressed">
+                <InvokeService Target="mashup://visuals/mashup_root_2/Default_template_for_Nexmosphere/Group%20Actions/Group%20X-Script%20command%20structure/Text%20Input%20-%20COMMAND/" Type="Visual" Name="StopEdition" Delay="value:0.0" />
+              </EventTrigger>
+            </Attachments>
+            <Properties>
+              <Property Type="Domain" Name="Text"><![CDATA[value:499D210143300012]]></Property>
+              <Property Type="Visual" Name="Font"><![CDATA[value:Verdana]]></Property>
+              <Property Type="Visual" Name="FontColor"><![CDATA[value:#FF262626]]></Property>
+              <Property Type="Visual" Name="FontSize"><![CDATA[value:14]]></Property>
+              <Property Type="Visual" Name="InstructionFont">
+                <Typeface>
+                  <Family>Segoe UI</Family>
+                  <Stretch>normal</Stretch>
+                  <Weight>400</Weight>
+                  <Style>italic</Style>
+                </Typeface>
+              </Property>
+              <Property Type="Visual" Name="InstructionFontSize"><![CDATA[value:25]]></Property>
+              <Property Type="Visual" Name="Keyboard"><![CDATA[value:UNDEFINED]]></Property>
+              <Property Type="Visual" Name="BackgroundColor"><![CDATA[value:#FFBABABA]]></Property>
+              <Property Type="Visual" Name="EditionBackgroundColor"><![CDATA[value:#FFCFCFCF]]></Property>
+              <Property Type="Visual" Name="InstructionFontColor"><![CDATA[value:#FF848484]]></Property>
+              <Property Type="Visual" Name="InstructionItalic"><![CDATA[value:True]]></Property>
+              <Property Type="Visual" Name="SelectionAreaColor"><![CDATA[value:#FF595959]]></Property>
+              <Property Type="Visual" Name="Bold"><![CDATA[value:True]]></Property>
+              <Property Type="Visual" Name="BorderColor"><![CDATA[value:#FFE9E9E9]]></Property>
+              <Property Type="Visual" Name="EditionBorderColor"><![CDATA[value:#FFE9E9E9]]></Property>
+              <Property Type="Container" Name="X"><![CDATA[value:234]]></Property>
+              <Property Type="Container" Name="Y"><![CDATA[value:15]]></Property>
+              <Property Type="Container" Name="Width"><![CDATA[value:209]]></Property>
+              <Property Type="Container" Name="Height"><![CDATA[value:30]]></Property>
+              <Property Type="Container" Name="Orientation"><![CDATA[value:0]]></Property>
+              <Property Type="Visual" Name="TextAlignment"><![CDATA[value:Center]]></Property>
+            </Properties>
+          </Asset>
+          <Asset Name="Text Input - FORMAT" Visual="Text input" Style="" Container="Scale" ContainerStyle="" Domain="value:Text input">
+            <Attachments>
+              <EventTrigger EventType="Visual" EventName="EnterKeyPressed">
+                <InvokeService Target="mashup://visuals/mashup_root_2/Default_template_for_Nexmosphere/Group%20Actions/Group%20X-Script%20command%20structure/Text%20Input%20-%20FORMAT/" Type="Visual" Name="StopEdition" Delay="value:0.0" />
+              </EventTrigger>
+            </Attachments>
+            <Properties>
+              <Property Type="Domain" Name="Text"><![CDATA[value:B]]></Property>
+              <Property Type="Visual" Name="Font"><![CDATA[value:Verdana]]></Property>
+              <Property Type="Visual" Name="FontColor"><![CDATA[value:#FF262626]]></Property>
+              <Property Type="Visual" Name="FontSize"><![CDATA[value:14]]></Property>
+              <Property Type="Visual" Name="InstructionFont">
+                <Typeface>
+                  <Family>Segoe UI</Family>
+                  <Stretch>normal</Stretch>
+                  <Weight>400</Weight>
+                  <Style>italic</Style>
+                </Typeface>
+              </Property>
+              <Property Type="Visual" Name="InstructionFontSize"><![CDATA[value:25]]></Property>
+              <Property Type="Visual" Name="Keyboard"><![CDATA[value:UNDEFINED]]></Property>
+              <Property Type="Visual" Name="BackgroundColor"><![CDATA[value:#FFBABABA]]></Property>
+              <Property Type="Visual" Name="EditionBackgroundColor"><![CDATA[value:#FFCFCFCF]]></Property>
+              <Property Type="Visual" Name="InstructionFontColor"><![CDATA[value:#FF848484]]></Property>
+              <Property Type="Visual" Name="InstructionItalic"><![CDATA[value:True]]></Property>
+              <Property Type="Visual" Name="SelectionAreaColor"><![CDATA[value:#FF595959]]></Property>
+              <Property Type="Visual" Name="Bold"><![CDATA[value:True]]></Property>
+              <Property Type="Visual" Name="BorderColor"><![CDATA[value:#FFE9E9E9]]></Property>
+              <Property Type="Visual" Name="EditionBorderColor"><![CDATA[value:#FFE9E9E9]]></Property>
+              <Property Type="Container" Name="X"><![CDATA[value:104]]></Property>
+              <Property Type="Container" Name="Y"><![CDATA[value:15]]></Property>
+              <Property Type="Container" Name="Width"><![CDATA[value:25]]></Property>
+              <Property Type="Container" Name="Height"><![CDATA[value:30]]></Property>
+              <Property Type="Container" Name="Orientation"><![CDATA[value:0]]></Property>
+              <Property Type="Visual" Name="TextAlignment"><![CDATA[value:Center]]></Property>
+            </Properties>
+          </Asset>
+          <Asset Name="Text Input - ADDRESS" Visual="Text input" Style="" Container="Scale" ContainerStyle="" Domain="value:Text input">
+            <Attachments>
+              <EventTrigger EventType="Visual" EventName="EnterKeyPressed">
+                <InvokeService Target="mashup://visuals/mashup_root_2/Default_template_for_Nexmosphere/Group%20Actions/Group%20X-Script%20command%20structure/Text%20Input%20-%20ADDRESS/" Type="Visual" Name="StopEdition" Delay="value:0.0" />
+              </EventTrigger>
+            </Attachments>
+            <Properties>
+              <Property Type="Domain" Name="Text"><![CDATA[value:002]]></Property>
+              <Property Type="Visual" Name="Font"><![CDATA[value:Verdana]]></Property>
+              <Property Type="Visual" Name="FontColor"><![CDATA[value:#FF262626]]></Property>
+              <Property Type="Visual" Name="FontSize"><![CDATA[value:14]]></Property>
+              <Property Type="Visual" Name="InstructionFont">
+                <Typeface>
+                  <Family>Segoe UI</Family>
+                  <Stretch>normal</Stretch>
+                  <Weight>400</Weight>
+                  <Style>italic</Style>
+                </Typeface>
+              </Property>
+              <Property Type="Visual" Name="InstructionFontSize"><![CDATA[value:25]]></Property>
+              <Property Type="Visual" Name="Keyboard"><![CDATA[value:UNDEFINED]]></Property>
+              <Property Type="Visual" Name="BackgroundColor"><![CDATA[value:#FFBABABA]]></Property>
+              <Property Type="Visual" Name="EditionBackgroundColor"><![CDATA[value:#FFCFCFCF]]></Property>
+              <Property Type="Visual" Name="InstructionFontColor"><![CDATA[value:#FF848484]]></Property>
+              <Property Type="Visual" Name="InstructionItalic"><![CDATA[value:True]]></Property>
+              <Property Type="Visual" Name="SelectionAreaColor"><![CDATA[value:#FF595959]]></Property>
+              <Property Type="Visual" Name="Bold"><![CDATA[value:True]]></Property>
+              <Property Type="Visual" Name="BorderColor"><![CDATA[value:#FFE9E9E9]]></Property>
+              <Property Type="Visual" Name="EditionBorderColor"><![CDATA[value:#FFE9E9E9]]></Property>
+              <Property Type="Container" Name="X"><![CDATA[value:60]]></Property>
+              <Property Type="Container" Name="Y"><![CDATA[value:15]]></Property>
+              <Property Type="Container" Name="Width"><![CDATA[value:51]]></Property>
+              <Property Type="Container" Name="Height"><![CDATA[value:30]]></Property>
+              <Property Type="Container" Name="Orientation"><![CDATA[value:0]]></Property>
+              <Property Type="Visual" Name="TextAlignment"><![CDATA[value:Center]]></Property>
+            </Properties>
+          </Asset>
+          <Asset Name="Text Input - TYPE" Visual="Text input" Style="" Container="Scale" ContainerStyle="" Domain="value:Text input">
+            <Attachments>
+              <EventTrigger EventType="Visual" EventName="EnterKeyPressed">
+                <InvokeService Target="mashup://visuals/mashup_root_2/Default_template_for_Nexmosphere/Group%20Actions/Group%20X-Script%20command%20structure/Text%20Input%20-%20TYPE/" Type="Visual" Name="StopEdition" Delay="value:0.0" />
+              </EventTrigger>
+            </Attachments>
+            <Properties>
+              <Property Type="Domain" Name="Text"><![CDATA[value:X]]></Property>
+              <Property Type="Visual" Name="Font"><![CDATA[value:Verdana]]></Property>
+              <Property Type="Visual" Name="FontColor"><![CDATA[value:#FF262626]]></Property>
+              <Property Type="Visual" Name="FontSize"><![CDATA[value:14]]></Property>
+              <Property Type="Visual" Name="InstructionFont">
+                <Typeface>
+                  <Family>Segoe UI</Family>
+                  <Stretch>normal</Stretch>
+                  <Weight>400</Weight>
+                  <Style>italic</Style>
+                </Typeface>
+              </Property>
+              <Property Type="Visual" Name="InstructionFontSize"><![CDATA[value:25]]></Property>
+              <Property Type="Visual" Name="Keyboard"><![CDATA[value:UNDEFINED]]></Property>
+              <Property Type="Visual" Name="BackgroundColor"><![CDATA[value:#FFBABABA]]></Property>
+              <Property Type="Visual" Name="EditionBackgroundColor"><![CDATA[value:#FFCFCFCF]]></Property>
+              <Property Type="Visual" Name="InstructionFontColor"><![CDATA[value:#FF848484]]></Property>
+              <Property Type="Visual" Name="InstructionItalic"><![CDATA[value:True]]></Property>
+              <Property Type="Visual" Name="SelectionAreaColor"><![CDATA[value:#FF595959]]></Property>
+              <Property Type="Visual" Name="Bold"><![CDATA[value:True]]></Property>
+              <Property Type="Visual" Name="BorderColor"><![CDATA[value:#FFE9E9E9]]></Property>
+              <Property Type="Visual" Name="EditionBorderColor"><![CDATA[value:#FFE9E9E9]]></Property>
+              <Property Type="Container" Name="X"><![CDATA[value:14]]></Property>
+              <Property Type="Container" Name="Y"><![CDATA[value:15]]></Property>
+              <Property Type="Container" Name="Width"><![CDATA[value:28]]></Property>
+              <Property Type="Container" Name="Height"><![CDATA[value:30]]></Property>
+              <Property Type="Container" Name="Orientation"><![CDATA[value:0]]></Property>
+              <Property Type="Visual" Name="TextAlignment"><![CDATA[value:Center]]></Property>
+            </Properties>
+          </Asset>
+        </Collection>
+        <Asset Name="Btn - Send X-Script command structure" Visual="Button" Style="Simple button" Container="Default" ContainerStyle="" Domain="value:VisibleTrigger">
+          <Attachments>
+            <EventTrigger EventType="Visual" EventName="Released">
+              <InvokeService Target="mashup://externals/Nexmosphere/" Type="Domain" Name="SendXScriptCommand" Delay="value:0">
+                <ServiceValueParameter ParamName="TYPE" Value="mashup://visuals/mashup_root_2/Default_template_for_Nexmosphere/Group%20Actions/Group%20X-Script%20command%20structure/Text%20Input%20-%20TYPE/DomainComponent/Text" />
+                <ServiceValueParameter ParamName="ADDRESS" Value="mashup://visuals/mashup_root_2/Default_template_for_Nexmosphere/Group%20Actions/Group%20X-Script%20command%20structure/Text%20Input%20-%20ADDRESS/DomainComponent/Text" />
+                <ServiceValueParameter ParamName="FORMAT" Value="mashup://visuals/mashup_root_2/Default_template_for_Nexmosphere/Group%20Actions/Group%20X-Script%20command%20structure/Text%20Input%20-%20FORMAT/DomainComponent/Text" />
+                <ServiceValueParameter ParamName="COMMAND" Value="mashup://visuals/mashup_root_2/Default_template_for_Nexmosphere/Group%20Actions/Group%20X-Script%20command%20structure/Text%20Input%20-%20COMMAND/DomainComponent/Text" />
+              </InvokeService>
+            </EventTrigger>
+          </Attachments>
+          <Properties>
+            <Property Type="Visual" Name="Font">
+              <Typeface>
+                <Family>Segoe UI</Family>
+                <Stretch>normal</Stretch>
+                <Weight>400</Weight>
+                <Style>normal</Style>
+              </Typeface>
+            </Property>
+            <Property Type="Visual" Name="FontSize"><![CDATA[value:14]]></Property>
+            <Property Type="Visual" Name="Text"><![CDATA[value:Send]]></Property>
+            <Property Type="Visual" Name="BackgroundColor"><![CDATA[value:#FFFAFAFA]]></Property>
+            <Property Type="Visual" Name="Radius"><![CDATA[value:5]]></Property>
+            <Property Type="Visual" Name="Flat"><![CDATA[value:True]]></Property>
+            <Property Type="Visual" Name="PressedVeilColor"><![CDATA[value:#80000000]]></Property>
+            <Property Type="Visual" Name="FontColor"><![CDATA[value:#FF000000]]></Property>
+            <Property Type="Visual" Name="OutlineColor"><![CDATA[value:#FF2B2B2B]]></Property>
+            <Property Type="Visual" Name="LineWrap"><![CDATA[value:True]]></Property>
+            <Property Type="Container" Name="X"><![CDATA[value:506]]></Property>
+            <Property Type="Container" Name="Y"><![CDATA[value:265]]></Property>
+            <Property Type="Container" Name="Width"><![CDATA[value:80]]></Property>
+            <Property Type="Container" Name="Height"><![CDATA[value:30]]></Property>
+            <Property Type="Container" Name="Orientation"><![CDATA[value:0]]></Property>
+          </Properties>
+        </Asset>
+      </Collection>
+      <Asset Name="Group separator Middle" Visual="DefaultRectangle" Style="" Container="No resize" ContainerStyle="" Domain="value:Rectangle">
+        <Properties>
+          <Property Type="Visual" Name="BorderThickness"><![CDATA[value:0]]></Property>
+          <Property Type="Visual" Name="BorderColor"><![CDATA[value:#00000000]]></Property>
+          <Property Type="Visual" Name="CornerRadius"><![CDATA[value:0]]></Property>
+          <Property Type="Visual" Name="BackgroundColor"><![CDATA[value:#D9343333]]></Property>
+          <Property Type="Container" Name="X"><![CDATA[value:300]]></Property>
+          <Property Type="Container" Name="Y"><![CDATA[value:600]]></Property>
+          <Property Type="Container" Name="Width"><![CDATA[value:600]]></Property>
+          <Property Type="Container" Name="Height"><![CDATA[value:1]]></Property>
+          <Property Type="Container" Name="Orientation"><![CDATA[value:0]]></Property>
+        </Properties>
+      </Asset>
+      <Collection Name="Group Triggers" Visual="Group" Style="" Container="Default" ContainerStyle="">
+        <Properties>
+          <Property Type="Container" Name="X"><![CDATA[value:300]]></Property>
+          <Property Type="Container" Name="Y"><![CDATA[value:650]]></Property>
+          <Property Type="Visual" Name="InitialWidth"><![CDATA[value:600]]></Property>
+          <Property Type="Container" Name="Width"><![CDATA[value:600]]></Property>
+          <Property Type="Visual" Name="InitialHeight"><![CDATA[value:100]]></Property>
+          <Property Type="Container" Name="Height"><![CDATA[value:100]]></Property>
+          <Property Type="Container" Name="Orientation"><![CDATA[value:0]]></Property>
+        </Properties>
+        <Asset Name="TRIGGERS" Visual="DefaultText" Style="" Container="Scale" ContainerStyle="" Domain="value:Text">
+          <Properties>
+            <Property Type="Visual" Name="VerticalAlignment"><![CDATA[value:Center]]></Property>
+            <Property Type="Visual" Name="Font"><![CDATA[value:Verdana]]></Property>
+            <Property Type="Visual" Name="FontColor"><![CDATA[value:#FF333333]]></Property>
+            <Property Type="Domain" Name="Text"><![CDATA[value:TRIGGERS]]></Property>
+            <Property Type="Visual" Name="Bold"><![CDATA[value:False]]></Property>
+            <Property Type="Visual" Name="FontSize"><![CDATA[value:20]]></Property>
+            <Property Type="Visual" Name="Alignment"><![CDATA[value:Left]]></Property>
+            <Property Type="Visual" Name="Italic"><![CDATA[value:False]]></Property>
+            <Property Type="Container" Name="X"><![CDATA[value:161]]></Property>
+            <Property Type="Container" Name="Y"><![CDATA[value:30]]></Property>
+            <Property Type="Container" Name="Width"><![CDATA[value:271]]></Property>
+            <Property Type="Container" Name="Height"><![CDATA[value:36]]></Property>
+            <Property Type="Container" Name="Orientation"><![CDATA[value:0]]></Property>
+          </Properties>
+        </Asset>
+        <Asset Name="Trigger event feedback" Visual="DefaultEllipse" Style="" Container="Default" ContainerStyle="" Domain="value:Ellipse">
+          <Properties>
+            <Property Type="Visual" Name="BorderColor"><![CDATA[value:#FF000000]]></Property>
+            <Property Type="Container" Name="MinimizedWidth"><![CDATA[value:50]]></Property>
+            <Property Type="Container" Name="MinimizedHeight"><![CDATA[value:50]]></Property>
+            <Property Type="Container" Name="DisplayButtonsRadius"><![CDATA[value:19]]></Property>
+            <Property Type="Visual" Name="BackgroundColor"><![CDATA[value:#FF7D00A3]]></Property>
+            <Property Type="Visual" Name="BorderThickness"><![CDATA[value:0]]></Property>
+            <Property Type="Visual" Name="Flat"><![CDATA[value:True]]></Property>
+            <Property Type="Visual" Name="Effects">
+              <EffectsCollection>
+                <Blur Radius="4" />
+              </EffectsCollection>
+            </Property>
+            <Property Type="Container" Name="X"><![CDATA[value:153]]></Property>
+            <Property Type="Container" Name="Y"><![CDATA[value:31]]></Property>
+            <Property Type="Container" Name="Width"><![CDATA[value:12]]></Property>
+            <Property Type="Container" Name="Height"><![CDATA[value:12]]></Property>
+            <Property Type="Container" Name="Orientation"><![CDATA[value:0]]></Property>
+            <Property Type="Container" Name="IsVisible"><![CDATA[value:False]]></Property>
+          </Properties>
+        </Asset>
+        <Asset Name="Label - Last X-Script command" Visual="DefaultText" Container="Scale" ContainerStyle="" Domain="value:Text">
+          <Properties>
+            <Property Type="Visual" Name="FontColor"><![CDATA[value:#FF262626]]></Property>
+            <Property Type="Visual" Name="Font"><![CDATA[value:Verdana]]></Property>
+            <Property Type="Visual" Name="Bold"><![CDATA[value:False]]></Property>
+            <Property Type="Visual" Name="FontSize"><![CDATA[value:14]]></Property>
+            <Property Type="Visual" Name="Alignment"><![CDATA[value:Right]]></Property>
+            <Property Type="Domain" Name="Text"><![CDATA[value:Last X-Script command received:]]></Property>
+            <Property Type="Visual" Name="VerticalAlignment"><![CDATA[value:Center]]></Property>
+            <Property Type="Container" Name="X"><![CDATA[value:156]]></Property>
+            <Property Type="Container" Name="Y"><![CDATA[value:63]]></Property>
+            <Property Type="Container" Name="Width"><![CDATA[value:259]]></Property>
+            <Property Type="Container" Name="Height"><![CDATA[value:30]]></Property>
+            <Property Type="Container" Name="Orientation"><![CDATA[value:0]]></Property>
+          </Properties>
+        </Asset>
+        <Asset Name="Value - Last X-Script command" Visual="DefaultText" Style="" Container="Scale" ContainerStyle="" Domain="value:Text">
+          <Properties>
+            <Property Type="Domain" Name="Text"><![CDATA[value:]]></Property>
+            <Property Type="Visual" Name="Font"><![CDATA[value:Verdana]]></Property>
+            <Property Type="Visual" Name="FontSize"><![CDATA[value:14]]></Property>
+            <Property Type="Visual" Name="FontColor"><![CDATA[value:#FF262626]]></Property>
+            <Property Type="Visual" Name="VerticalAlignment"><![CDATA[value:Center]]></Property>
+            <Property Type="Visual" Name="Alignment"><![CDATA[value:Left]]></Property>
+            <Property Type="Visual" Name="Bold"><![CDATA[value:True]]></Property>
+            <Property Type="Container" Name="X"><![CDATA[value:442]]></Property>
+            <Property Type="Container" Name="Y"><![CDATA[value:63]]></Property>
+            <Property Type="Container" Name="Width"><![CDATA[value:271]]></Property>
+            <Property Type="Container" Name="Height"><![CDATA[value:30]]></Property>
+            <Property Type="Container" Name="Orientation"><![CDATA[value:0]]></Property>
+          </Properties>
+        </Asset>
+      </Collection>
+      <Asset Name="Group separator Bottom" Visual="DefaultRectangle" Style="" Container="No resize" ContainerStyle="" Domain="value:Rectangle">
+        <Properties>
+          <Property Type="Visual" Name="BorderThickness"><![CDATA[value:0]]></Property>
+          <Property Type="Visual" Name="BorderColor"><![CDATA[value:#00000000]]></Property>
+          <Property Type="Visual" Name="CornerRadius"><![CDATA[value:0]]></Property>
+          <Property Type="Visual" Name="BackgroundColor"><![CDATA[value:#D9343333]]></Property>
+          <Property Type="Container" Name="X"><![CDATA[value:300]]></Property>
+          <Property Type="Container" Name="Y"><![CDATA[value:700]]></Property>
+          <Property Type="Container" Name="Width"><![CDATA[value:600]]></Property>
+          <Property Type="Container" Name="Height"><![CDATA[value:1]]></Property>
+          <Property Type="Container" Name="Orientation"><![CDATA[value:0]]></Property>
+        </Properties>
+      </Asset>
+      <Collection Name="Group Activity" Visual="Group" Style="" Container="Default" ContainerStyle="">
+        <Properties>
+          <Property Type="Container" Name="X"><![CDATA[value:300]]></Property>
+          <Property Type="Container" Name="Y"><![CDATA[value:820]]></Property>
+          <Property Type="Visual" Name="InitialWidth"><![CDATA[value:600]]></Property>
+          <Property Type="Container" Name="Width"><![CDATA[value:600]]></Property>
+          <Property Type="Visual" Name="InitialHeight"><![CDATA[value:240]]></Property>
+          <Property Type="Container" Name="Height"><![CDATA[value:240]]></Property>
+          <Property Type="Container" Name="Orientation"><![CDATA[value:0]]></Property>
+        </Properties>
+        <Asset Name="Label - Activity log" Visual="DefaultText" Style="" Container="Scale" ContainerStyle="" Domain="value:Text">
+          <Properties>
+            <Property Type="Visual" Name="VerticalAlignment"><![CDATA[value:Center]]></Property>
+            <Property Type="Visual" Name="Font"><![CDATA[value:Verdana]]></Property>
+            <Property Type="Visual" Name="FontColor"><![CDATA[value:#FF333333]]></Property>
+            <Property Type="Domain" Name="Text"><![CDATA[value:Activity log:]]></Property>
+            <Property Type="Visual" Name="Bold"><![CDATA[value:False]]></Property>
+            <Property Type="Visual" Name="FontSize"><![CDATA[value:10]]></Property>
+            <Property Type="Visual" Name="Alignment"><![CDATA[value:Left]]></Property>
+            <Property Type="Visual" Name="Italic"><![CDATA[value:False]]></Property>
+            <Property Type="Container" Name="X"><![CDATA[value:63]]></Property>
+            <Property Type="Container" Name="Y"><![CDATA[value:20]]></Property>
+            <Property Type="Container" Name="Width"><![CDATA[value:74]]></Property>
+            <Property Type="Container" Name="Height"><![CDATA[value:17]]></Property>
+            <Property Type="Container" Name="Orientation"><![CDATA[value:0]]></Property>
+          </Properties>
+        </Asset>
+        <Asset Name="Value - Activity log" Visual="DefaultText" Container="Scale" ContainerStyle="" Domain="value:Text">
+          <Properties>
+            <Property Type="Domain" Name="Text"><![CDATA[mashup://externals/Nexmosphere/OutputLog]]></Property>
+            <Property Type="Visual" Name="FontColor"><![CDATA[value:#FF262626]]></Property>
+            <Property Type="Visual" Name="Font"><![CDATA[value:Verdana]]></Property>
+            <Property Type="Visual" Name="Alignment"><![CDATA[value:Left]]></Property>
+            <Property Type="Visual" Name="Bold"><![CDATA[value:True]]></Property>
+            <Property Type="Visual" Name="FontSize"><![CDATA[value:8]]></Property>
+            <Property Type="Visual" Name="VerticalAlignment"><![CDATA[value:Top]]></Property>
+            <Property Type="Container" Name="X"><![CDATA[value:337]]></Property>
+            <Property Type="Container" Name="Y"><![CDATA[value:122]]></Property>
+            <Property Type="Container" Name="Width"><![CDATA[value:484]]></Property>
+            <Property Type="Container" Name="Height"><![CDATA[value:211]]></Property>
+            <Property Type="Container" Name="Orientation"><![CDATA[value:0]]></Property>
+          </Properties>
+        </Asset>
+      </Collection>
+    </Collection>
+  </MashupCollection>
+  <MashupExternalAsset ContextAlias="ASSOCIATED_IA">
+    <ExternalAsset Name="Nexmosphere" DescriptorPath="player://resources/026e3d6a-f9f7-4707-b2de-03ef4d4093c6" ExternalAssetName="Nexmosphere">
+      <Attachments>
+        <PresentationEventTrigger EventType="Domain" EventName="XScriptCommand" TypeList="All">
+          <InvokeService Target="mashup://visuals/mashup_root_2/Default_template_for_Nexmosphere/Group%20Triggers/Value%20-%20Last%20X-Script%20command/" Type="Domain" Name="SetText" Delay="value:0">
+            <ServiceArgumentParameter ParamName="value" ArgumentName="FullLine" />
+          </InvokeService>
+          <InvokeService Target="mashup://visuals/mashup_root_2/Default_template_for_Nexmosphere/Group%20Triggers/Trigger%20event%20feedback/" Type="Container" Name="Show" Delay="value:0">
+            <ServiceValueParameter ParamName="hideOtherAssetsInCollection" Value="value:False" />
+            <ServiceValueParameter ParamName="animationType" Value="value:Fade" />
+            <ServiceValueParameter ParamName="dDuration" Value="value:0.2" />
+            <ServiceValueParameter ParamName="eTweeningTypes" Value="value:eEaseInOut" />
+            <ServiceValueParameter ParamName="nRunningCount" Value="value:3" />
+            <ServiceValueParameter ParamName="eRepeatBehavior" Value="value:eAutoReverse" />
+            <ServiceValueParameter ParamName="dDelayBeforeRepeat" Value="value:0" />
+            <ServiceValueParameter ParamName="bResetAtEnd" Value="value:True" />
+          </InvokeService>
+        </PresentationEventTrigger>
+      </Attachments>
+      <Properties>
+        <Property Type="Domain" Name="PortName"><![CDATA[mashup://visuals/mashup_root_2/Default_template_for_Nexmosphere/Group%20Properties/Value%20-%20COM%20%20Serial%20Port%20Name/DomainComponent/Text]]></Property>
+        <Property Type="Domain" Name="AutoReconnect"><![CDATA[mashup://visuals/mashup_root_2/Default_template_for_Nexmosphere/Group%20Properties/Btn%20-%20Auto%20Reconnect/DomainComponent/IsChecked]]></Property>
+      </Properties>
+    </ExternalAsset>
+  </MashupExternalAsset>
+  <MashupResource>
+    <Resource Key="17fe7904-af2d-4ce5-9fdb-806752bf053e" Type="uri" Length="14455" LastModificationDate="2019-09-26T08:19:04.6084187Z" Archive="SmallFiles.zip" DefaultValue="player://data/Images/Logo_nexmosphere.png">
+      <Alternate Value="player://data/Generated/9615b4d1842f8471e9409a86de188d2b.png" Width="267" Height="50" Length="12555" LastModificationDate="2019-10-01T14:37:16.9435359Z" Archive="SmallFiles.zip" />
+    </Resource>
+  </MashupResource>
+  <MashupResource>
+    <Resource Key="026e3d6a-f9f7-4707-b2de-03ef4d4093c6" Type="uri" Length="5994" LastModificationDate="2019-10-01T10:11:56.496183Z" DefaultValue="player://data/InterfaceAssets/Nexmosphere/Nexmosphere.ifd">
+      <Dependencies>
+        <Dependency URI="player://data/InterfaceAssets/Nexmosphere/Nexmosphere-DA.dax" Length="67105" LastModificationDate="2019-10-01T14:18:49.0369701Z" Archive="SmallFiles.zip" />
+        <Dependency URI="player://data/InterfaceAssets/Nexmosphere/Nexmosphere-DA.png" Length="3879" LastModificationDate="2019-09-26T08:25:59.32473Z" Archive="SmallFiles.zip" />
+        <Dependency URI="player://data/InterfaceAssets/Nexmosphere/Nexmosphere-icon.png" Length="5622" LastModificationDate="2019-08-26T15:26:19.1697585Z" Archive="SmallFiles.zip" />
+        <Dependency URI="player://data/InterfaceAssets/Nexmosphere/Nexmosphere.dll" Length="14848" LastModificationDate="2019-10-01T14:23:30.0537597Z" Archive="SmallFiles.zip" />
+        <Dependency URI="player://data/InterfaceAssets/Nexmosphere/Nexmosphere.pdb" Length="30208" LastModificationDate="2019-10-01T14:23:29.9957631Z" Archive="SmallFiles.zip" />
+        <Dependency URI="player://data/InterfaceAssets/Nexmosphere/Data/Images/Logo_nexmosphere.png" Length="14455" LastModificationDate="2019-09-26T08:19:04.6084187Z" Archive="SmallFiles.zip" />
+      </Dependencies>
+    </Resource>
+  </MashupResource>
+</Mashup>
