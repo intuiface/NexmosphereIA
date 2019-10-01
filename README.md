@@ -21,7 +21,7 @@ It comes with a default Design Accelerator that will enable you to easily test y
 
 ![Nexmosphere Default Design Accelerator](Screenshots/Nexmosphere-DA.jpg "width:350px")
 
-For more information about Nexmosphere and this interface asset, the online article about [using Nexmosphere within Intuiface](https://support.intuiface.com/hc/en-us/articles/360009681439) within the Intuiface Help Center.
+For more information about Nexmosphere and this interface asset, see the online article about [using Nexmosphere within Intuiface](https://support.intuiface.com/hc/en-us/articles/360009681439) within the [Intuiface Help Center](https://support.intuiface.com/hc/en-us).
 
 # How to use the Nexmosphere Interface Asset?
 
@@ -30,7 +30,7 @@ To add the Nexmosphere Interface Asset into an Intuiface experience, follow thes
 * Download the [latest released package here](https://github.com/intuiface/NexmosphereIA/releases).
 * Extract the archive, open the resulting OutputInterfaceAsset folder, and copy the **Nexmosphere** folder to the path "[Drive]:\Users\\[UserName]\Documents\Intuiface\Interface Assets".
 * Launch **Intuiface Composer** and open your project.
-* Open the Interface Asset panel and select the **Add an Interface Asset** option when you enter "Nexmosphere" in the search bar, you will see the **Nexmosphere** Interface Asset.
+* Open the Interface Asset panel and select the **Add an Interface Asset** option. When you enter "Nexmosphere" in the search bar, you should see the **Nexmosphere** Interface Asset.
 
 # How to build this project?
 
@@ -41,13 +41,13 @@ The Nexmosphere Interface Asset is coded in C#.
 To build this project, follow these steps:
 * Open **Nexmosphere.sln** in Visual Studio 2013 or above,
 * Build the solution in **Release** mode,
-* Navigate to the root of the project and look for, a folder named **OutputInterfaceAsset** which contains the Nexmosphere Interface Asset.
+* Navigate to the root of the project and look for a folder named **OutputInterfaceAsset** which contains the Nexmosphere Interface Asset.
 
-If you want to make your own Interface Asset enhancements, review the article [Create a .NET Interface Asset](https://support.intuiface.com/hc/en-us/articles/360007179792-Create-a-NET-Interface-Asset) in the Intuiface Help Center.
+If you want to make your own Interface Asset enhancements, review the article [Create a .NET Interface Asset](https://support.intuiface.com/hc/en-us/articles/360007179792-Create-a-NET-Interface-Asset) in the [Intuiface Help Center](https://support.intuiface.com/hc/en-us).
 
 -----
 
-Copyright &copy; 2019 IntuiLab.
+Copyright &copy; 2019 Intuiface.
 
 Released under the **MIT License**.
 
