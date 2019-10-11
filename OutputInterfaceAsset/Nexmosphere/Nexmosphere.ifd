@@ -1,148 +1,159 @@
 {
-    "kind": "discovery#restDescription",
-    "discoveryVersion": "v2",
-    "id": "Nexmosphere",
-    "name": "Nexmosphere",
-    "version": "1.0",
-    "protocol": "dll",
-    "baseUrl": null,
-    "basePath": "Nexmosphere",
-    "auth": {},
-    "dependencies": [
-        "Nexmosphere.dll"
-    ],
-    "icons": {
-        "x32": "Nexmosphere-icon.png"
-    },
-    "schemas": {
-        "Nexmosphere": {
-            "id": "Nexmosphere",
-            "type": "object",
-            "properties": {
-                "PortName": {
-                    "title": "COM / Serial Port Name",
-                    "type": "string",
-                    "description": "COM / Serial Port Name (ex: COM1)."
-                },
-                "AutoReconnect": {
-                    "title": "Auto reconnect",
-                    "type": "boolean",
-                    "description": "Auto reconnect option. When set to true Interface Asset will periodically attempt to reconnect to the Nexmosphere device."
-                },
-                "IsConnected": {
-                    "title": "Is connected",
-                    "type": "boolean",
-                    "description": "Indicates the status of the connection between the Nexmosphere device and the Interface Asset.",
-                    "readonly": true
-                },
-                "OutputLog": {
-                    "title": "Activity log",
-                    "type": "string",
-                    "description": "Event Log of the Nexmosphere/Interface Asset activity.",
-                    "readonly": true
-                }
-            }
+  "kind": "discovery#restDescription",
+  "discoveryVersion": "v2",
+  "id": "Nexmosphere",
+  "name": "Nexmosphere",
+  "version": "1.0",
+  "protocol": "dll",
+  "baseUrl": null,
+  "basePath": "Nexmosphere",
+  "auth": {},
+  "dependencies": [
+    "Nexmosphere.dll"
+  ],
+  "icons": {
+    "x32": "Nexmosphere-icon.png"
+  },
+  "schemas": {
+    "Nexmosphere": {
+      "id": "Nexmosphere",
+      "type": "object",
+      "properties": {
+        "PortName": {
+          "title": "COM / Serial Port Name",
+          "type": "string",
+          "description": "COM / Serial Port Name (ex: COM1)."
+        },
+        "AutoReconnect": {
+          "title": "Auto reconnect",
+          "type": "boolean",
+          "description": "Auto reconnect option. When set to true Interface Asset will periodically attempt to reconnect to the Nexmosphere device."
+        },
+        "IsConnected": {
+          "title": "Is connected",
+          "type": "boolean",
+          "description": "Indicates the status of the connection between the Nexmosphere device and the Interface Asset.",
+          "readonly": true
+        },
+        "OutputLog": {
+          "title": "Activity log",
+          "type": "string",
+          "description": "Event Log of the Nexmosphere/Interface Asset activity.",
+          "readonly": true
         }
-    },
-    "resources": {
-        "Nexmosphere": {
-            "isInterfaceAsset": true,
-            "title": "Nexmosphere",
-            "description": "Send commands to and receive messages from any Nexmosphere device.",
-            "if.templateDesignAccelerator": "Nexmosphere-DA.dax",
-            "methods": {
-                "OpenSerialPort": {
-                    "title": "Connect the Nexmosphere device",
-                    "description": "Try to establish a connection to the Nexmosphere device (by opening the serial port).",
-                    "response": {
-                        "type": "none"
-                    }
-                },
-                "CloseSerialPort": {
-                    "title": "Disconnect the Nexmosphere device",
-                    "description": "Close the connection to the Nexmosphere device (Close Serial Port).",
-                    "response": {
-                        "type": "none"
-                    }
-                },
-                "SendXScriptCommand_FullLine": {
-                    "title": "Send X-Script command line",
-                    "description": "Send a full line X-Script command",
-                    "parameters": {
-                        "XScriptCommand": {
-                            "type": "string",
-                            "description": "Full line X-Script command to send via serial port",
-                            "default": ""
-                        }
-                    },
-                    "response": {
-                        "type": "none"
-                    }
-                },
-                "SendXScriptCommand": {
-                    "title": "Send X-Script command",
-                    "description": "Send X-Script command structure for a command",
-                    "parameters": {
-                        "TYPE": {
-                            "type": "string",
-                            "description": "type of command: X= X-Talk command, G = Generic control command, S = System command, D = Diagnostic command",
-                            "default": "X"
-                        },
-                        "ADDRESS": {
-                            "type": "string",
-                            "description": "channel address to which the command is send: value between 0-999",
-                            "default": "002"
-                        },
-                        "FORMAT": {
-                            "type": "string",
-                            "description": "format of the command: A = short command (number between 0-65535), B = long command (string of 0-30 characters), S = setting command (custom format for each setting)",
-                            "default": "S"
-                        },
-                        "COMMAND": {
-                            "type": "string",
-                            "description": "the command to send",
-                            "default": ""
-                        }
-                    },
-                    "response": {
-                        "type": "none"
-                    }
-                }
-            },
-            "events": {
-                "XScriptCommand": {
-                    "id": "X-Script Command",
-                    "title": "X-Script command received",
-                    "description": "Raised when a X-Script command is received.",
-                    "properties": {
-                        "FullLine": {
-                            "type": "string",
-                            "title": "X-Script command (full line)",
-                            "description": "X-Script command (full line)"
-                        },
-                        "TYPE": {
-                            "type": "string",
-                            "title": "TYPE",
-                            "description": "TYPE"
-                        },
-                        "ADDRESS": {
-                            "type": "string",
-                            "title": "ADDRESS",
-                            "description": "ADDRESS"
-                        },
-                        "FORMAT": {
-                            "type": "string",
-                            "title": "FORMAT",
-                            "description": "FORMAT"
-                        },
-                        "COMMAND": {
-                            "type": "string",
-                            "title": "COMMAND",
-                            "description": "COMMAND"
-                        }
-                    }
-                }
-            }
-        }
+      }
     }
+  },
+  "resources": {
+    "Nexmosphere": {
+      "isInterfaceAsset": true,
+      "title": "Nexmosphere",
+      "description": "Send commands to and receive messages from any Nexmosphere device.",
+      "if.templateDesignAccelerator": "Nexmosphere-DA.dax",
+      "methods": {
+        "OpenSerialPort": {
+          "title": "Connect the Nexmosphere device",
+          "description": "Try to establish a connection to the Nexmosphere device (by opening the serial port).",
+          "response": {
+            "type": "none"
+          }
+        },
+        "CloseSerialPort": {
+          "title": "Disconnect the Nexmosphere device",
+          "description": "Close the connection to the Nexmosphere device (Close Serial Port).",
+          "response": {
+            "type": "none"
+          }
+        },
+        "SendXScriptCommand_FullLine": {
+          "title": "Send X-Script command line",
+          "description": "Send a full line X-Script command",
+          "parameters": {
+            "XScriptCommand": {
+              "type": "string",
+              "description": "Full line X-Script command to send via serial port",
+              "default": ""
+            }
+          },
+          "response": {
+            "type": "none"
+          }
+        },
+        "SendXScriptCommand": {
+          "title": "Send X-Script command",
+          "description": "Send X-Script command structure for a command",
+          "parameters": {
+            "TYPE": {
+              "type": "string",
+              "description": "type of command: X= X-Talk command, G = Generic control command, S = System command, D = Diagnostic command",
+              "default": "X"
+            },
+            "ADDRESS": {
+              "type": "string",
+              "description": "channel address to which the command is send: value between 0-999",
+              "default": "002"
+            },
+            "FORMAT": {
+              "type": "string",
+              "description": "format of the command: A = short command (number between 0-65535), B = long command (string of 0-30 characters), S = setting command (custom format for each setting)",
+              "default": "S"
+            },
+            "COMMAND": {
+              "type": "string",
+              "description": "the command to send",
+              "default": ""
+            }
+          },
+          "response": {
+            "type": "none"
+          }
+        }
+      },
+      "events": {
+        "XScriptCommand": {
+          "id": "X-Script Command",
+          "title": "X-Script command received",
+          "description": "Raised when a X-Script command is received.",
+          "properties": {
+            "FullLine": {
+              "type": "string",
+              "title": "X-Script command (full line)",
+              "description": "X-Script command (full line)"
+            },
+            "TYPE": {
+              "type": "string",
+              "title": "TYPE",
+              "description": "TYPE"
+            },
+            "ADDRESS": {
+              "type": "string",
+              "title": "ADDRESS",
+              "description": "ADDRESS"
+            },
+            "FORMAT": {
+              "type": "string",
+              "title": "FORMAT",
+              "description": "FORMAT"
+            },
+            "COMMAND": {
+              "type": "string",
+              "title": "COMMAND",
+              "description": "COMMAND"
+            }
+          }
+        }
+      }
+    }
+  },
+  "signature": {
+    "hash": "roHHP6iclE0qLE6IxpCEvGnEEYSAcsSYtV5pbLV5ceY=",
+    "signatureData": {
+      "editionLevel": "FREE",
+      "hostname": "CASSIS",
+      "v": 2,
+      "data": "/XGTyWMR9QZResaTGdtXzpDBPR56nc38l+shATtiFFT/bp2DA2QpuR1tVD3C8M+AIIrC5RvxopmqbxGWGZwKKyJ4FDJEW/zs+tQplQsqWkRhEaOyBnx4ped8FHXkRLivubUh/nx3rhnSRz8D2nIF+VOFbk6HrRUx5Ex/rdPh3Ym7thywEWG/0vijzZYQlumb09hvSDl2PNX1xzAnBvFsvscq/mH4TWXM6/yRQPeqKhj2bj+WefefLGNly1A7XhYMMUBjryRAUXcKV836hk79kCj7HsoV2DqAQ/8OV/UObB1F+CzPDwRwcGfeNwOVRxsrAbF2Wv/MEz3bNd7tnneXh2HZTLmhGVI6TdFnvoe1nU/xuCZ2i6EcGM2A6JQtY5J73A/09yldMsPzI2K6QOzXKliIz3iuVmsVc/XGKXdsVC0enbaAPqIq+5lu54PZoSR5kKAA/ukw6zTHmBfOVSmBEIGHnaK5/DSNZ3UpVx6SW7MzxMfMHbwT7dFOKLbXJ+9DZMM9Yek7X/igwVtZmjUnht/uFCdUZMCSu4HBW+aC2e/xV5etBU+wX4DGm1UzPmi5x1xwjN52hwWYizwjFEAA072n+0Io8bagRzWw5aCMbF9n6TGjUqbE3V94SkVLAv0J7kajH8QrLEhfp1VXcKbJlsDDbde5FkcRHyfReqMaywhDWBA9hDBZzgGveXYnDnpIS9HIsMluwRO9Y5CvLRvNye9zTVTTV+5rLXTQ3SWWKg4g8PwsEn6lVhi1rRDQm0Zygt9GITkXdc+8TrzlDlwkMTPKesQei3Et1DKNAkDhTP8dk5SrLfP4EJ0TnCXTbxQu1xNdsNEc7B03R3Q+QYKQ8/khyQfr9b/BOGK1Uicf1wYF/OMAnQi13aitkOMYvDCCIO/GjJzPRVJUiToOXNqtP9iCo3qFGVkBkDeEG+P9lw1nND0uKJtxVxPh/ihVDoLEuSygLrrKeOLUQV86/VIrmJyb6g/73CSoJuMjmXw7uv/FRoHmTY+g5Qekiozc7Ww2ovNCJ4KNgvUWiNO/KwIiiA==",
+      "key": "ImZEQw5a6SWefvrbZw1Sbv9JdTv3AbupfB7R1LSn8A2eAsOZlW4j4+YCG3j3QF5DTzvGT7gwp548T5m9+lKhuS8bKyZkUq172lbt6CS86H7PfrZhT3JJJONvefJodXI7/zq6zJLHdMRpzMJA7+rzs47nsJDgwsB/iP7meLzRGKFAAxil0Hf2gInun0SlHMPYWeB5gUvKWvb61VH/vWrZIzTqHYUlWQw90WDjLo8I+8EHM4KMJiH8nLRMl377BUcM6LF4xQLjDiOMEUfsdZVOezJOIyvCiUa27Hw9msuH9zLv1D2/HsHzXxPpOER7jjQQLU+hX2mSzeocliYDNNXGIg==",
+      "iv": "YBBUUMY7pihiLbeJ7VgnG9RsWjiH11UvDUxErj6Z2y/R4p73AvAenOOCq6iQvl1gkar8+EF5RFcEfFowkTD1Yf7idzlqv+495/nhdoDEJ138UcTtvRhZpqAq5vFRx2o0Fra07B982l58Xb0C6rEy9vxN01mo66xmjTIKctmFJ1fryWIS6EggmaVP9NLiwjZVCSDX6B0EGl84kE1CwXyfHrWpCTOXMNBXuw+75Bix+ckYrl6FZr3PzqSPCcRE4GfyTYdhZfbubwzEM4xf/4XAvDJinCDbL2y3OUlzGkq+IVJeJcKOtjsfXFr3tQPawYoQmuJ3p1pwrBZ0/E8fFQk7gQ=="
+    }
+  }
 }
