@@ -24,7 +24,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-    <DebugType>pdbonly</DebugType>
+    <DebugType>none</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
     <DefineConstants>TRACE</DefineConstants>
@@ -54,11 +54,19 @@
     <None Include="DesignAccelerator\Nexmosphere-DA.png" />
     <None Include="InterfaceAssetDescriptor\Nexmosphere-icon.png" />
   </ItemGroup>
+  <ItemGroup>
+    <Content Include="JS\EventEmitter.js" />
+    <Content Include="JS\Moment.js" />
+    <Content Include="JS\Nexmosphere.js" />
+    <Content Include="JS\StringPolyfill.js" />
+    <Content Include="JS\XScriptCommand.js" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
     <PostBuildEvent>xcopy /S /Y /i "$(ProjectDir)bin\$(ConfigurationName)\*" "$(SolutionDir)OutputInterfaceAsset\Nexmosphere\"
 xcopy /S /Y /i "$(ProjectDir)InterfaceAssetDescriptor\*" "$(SolutionDir)OutputInterfaceAsset\Nexmosphere\"
-xcopy /S /Y /i "$(ProjectDir)DesignAccelerator\*" "$(SolutionDir)OutputInterfaceAsset\Nexmosphere\"</PostBuildEvent>
+xcopy /S /Y /i "$(ProjectDir)DesignAccelerator\*" "$(SolutionDir)OutputInterfaceAsset\Nexmosphere\"
+xcopy /S /Y /i "$(ProjectDir)JS\*" "$(SolutionDir)OutputInterfaceAsset\Nexmosphere\"</PostBuildEvent>
   </PropertyGroup>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

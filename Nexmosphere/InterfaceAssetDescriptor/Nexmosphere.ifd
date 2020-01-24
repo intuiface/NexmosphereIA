@@ -3,12 +3,17 @@
   "discoveryVersion": "v2",
   "id": "Nexmosphere",
   "name": "Nexmosphere",
-  "version": "1.0",
-  "protocol": "dll",
+  "version": "2.0",
+  "protocol": "native",
   "baseUrl": null,
   "basePath": "Nexmosphere",
   "auth": {},
   "dependencies": [
+    "EventEmitter.js",
+    "Moment.js",
+    "XScriptCommand.js",
+    "StringPolyfill.js",
+    "Nexmosphere.js",
     "Nexmosphere.dll"
   ],
   "icons": {
@@ -20,9 +25,14 @@
       "type": "object",
       "properties": {
         "PortName": {
-          "title": "COM / Serial Port Name",
+          "title": "Serial Port Name (Windows)",
           "type": "string",
-          "description": "COM / Serial Port Name (ex: COM1)."
+          "description": "Serial Port Name (ex: COM1)."
+        },
+        "PortNameOtherPlatforms": {
+          "title": "Serial Port Path (Android)",
+          "type": "string",
+          "description": "Serial Port Path (ex: /usb/001)."
         },
         "AutoReconnect": {
           "title": "Auto reconnect",
@@ -85,7 +95,7 @@
           "parameters": {
             "TYPE": {
               "type": "string",
-              "description": "type of command: X= X-Talk command, G = Generic control command, S = System command, D = Diagnostic command",
+              "description": "type of command: X = X-Talk command, G = Generic control command, S = System command, D = Diagnostic command",
               "default": "X"
             },
             "ADDRESS": {
@@ -146,14 +156,14 @@
     }
   },
   "signature": {
-    "hash": "roHHP6iclE0qLE6IxpCEvGnEEYSAcsSYtV5pbLV5ceY=",
+    "hash": "0Mg6LHlNoPWQoRHJMWjh4ulDZj7EmcGEEW6ONhKVX/4=",
     "signatureData": {
       "editionLevel": "FREE",
-      "hostname": "CASSIS",
+      "hostname": "SAPIN2",
       "v": 2,
-      "data": "/XGTyWMR9QZResaTGdtXzpDBPR56nc38l+shATtiFFT/bp2DA2QpuR1tVD3C8M+AIIrC5RvxopmqbxGWGZwKKyJ4FDJEW/zs+tQplQsqWkRhEaOyBnx4ped8FHXkRLivubUh/nx3rhnSRz8D2nIF+VOFbk6HrRUx5Ex/rdPh3Ym7thywEWG/0vijzZYQlumb09hvSDl2PNX1xzAnBvFsvscq/mH4TWXM6/yRQPeqKhj2bj+WefefLGNly1A7XhYMMUBjryRAUXcKV836hk79kCj7HsoV2DqAQ/8OV/UObB1F+CzPDwRwcGfeNwOVRxsrAbF2Wv/MEz3bNd7tnneXh2HZTLmhGVI6TdFnvoe1nU/xuCZ2i6EcGM2A6JQtY5J73A/09yldMsPzI2K6QOzXKliIz3iuVmsVc/XGKXdsVC0enbaAPqIq+5lu54PZoSR5kKAA/ukw6zTHmBfOVSmBEIGHnaK5/DSNZ3UpVx6SW7MzxMfMHbwT7dFOKLbXJ+9DZMM9Yek7X/igwVtZmjUnht/uFCdUZMCSu4HBW+aC2e/xV5etBU+wX4DGm1UzPmi5x1xwjN52hwWYizwjFEAA072n+0Io8bagRzWw5aCMbF9n6TGjUqbE3V94SkVLAv0J7kajH8QrLEhfp1VXcKbJlsDDbde5FkcRHyfReqMaywhDWBA9hDBZzgGveXYnDnpIS9HIsMluwRO9Y5CvLRvNye9zTVTTV+5rLXTQ3SWWKg4g8PwsEn6lVhi1rRDQm0Zygt9GITkXdc+8TrzlDlwkMTPKesQei3Et1DKNAkDhTP8dk5SrLfP4EJ0TnCXTbxQu1xNdsNEc7B03R3Q+QYKQ8/khyQfr9b/BOGK1Uicf1wYF/OMAnQi13aitkOMYvDCCIO/GjJzPRVJUiToOXNqtP9iCo3qFGVkBkDeEG+P9lw1nND0uKJtxVxPh/ihVDoLEuSygLrrKeOLUQV86/VIrmJyb6g/73CSoJuMjmXw7uv/FRoHmTY+g5Qekiozc7Ww2ovNCJ4KNgvUWiNO/KwIiiA==",
-      "key": "ImZEQw5a6SWefvrbZw1Sbv9JdTv3AbupfB7R1LSn8A2eAsOZlW4j4+YCG3j3QF5DTzvGT7gwp548T5m9+lKhuS8bKyZkUq172lbt6CS86H7PfrZhT3JJJONvefJodXI7/zq6zJLHdMRpzMJA7+rzs47nsJDgwsB/iP7meLzRGKFAAxil0Hf2gInun0SlHMPYWeB5gUvKWvb61VH/vWrZIzTqHYUlWQw90WDjLo8I+8EHM4KMJiH8nLRMl377BUcM6LF4xQLjDiOMEUfsdZVOezJOIyvCiUa27Hw9msuH9zLv1D2/HsHzXxPpOER7jjQQLU+hX2mSzeocliYDNNXGIg==",
-      "iv": "YBBUUMY7pihiLbeJ7VgnG9RsWjiH11UvDUxErj6Z2y/R4p73AvAenOOCq6iQvl1gkar8+EF5RFcEfFowkTD1Yf7idzlqv+495/nhdoDEJ138UcTtvRhZpqAq5vFRx2o0Fra07B982l58Xb0C6rEy9vxN01mo66xmjTIKctmFJ1fryWIS6EggmaVP9NLiwjZVCSDX6B0EGl84kE1CwXyfHrWpCTOXMNBXuw+75Bix+ckYrl6FZr3PzqSPCcRE4GfyTYdhZfbubwzEM4xf/4XAvDJinCDbL2y3OUlzGkq+IVJeJcKOtjsfXFr3tQPawYoQmuJ3p1pwrBZ0/E8fFQk7gQ=="
+      "data": "nlzvWQZThy5yU+dnrQqFO08n79bfpid3qpTihv1TX8GPyTZ1dqi0meIwy1T29fQfn4X7YpGdWeJPRs0oplh8H5qdVV3uHaronSpeIxXuHbG50xcZ0FBCQsfFhmP21A8BWAqN78DlIVT6mi/njBWLWawXsd3iL8ZqT3bc5E3Vft2JKKYZKZ6X6rlvD+pTAAbxrS6jyOLarTu3po/enqY1y5c920NUEQ7rZGcpzb2vsqbvSFdaQuTRpTGmgkQK58ghrJVQEysTacSTg8t49tZWnzyMZi4yHLQBFhWY8TWqf4HYWhoRQYqdutY1xzr4zpxQOwi2yHDW9n6n3Wc9D+W+xqI41C0rpf3ohfEgDgO+RRlCoyUsVvDNGwq9dYp4brSjvtZ9f3Yxb/JzZOOJbS6mVrrD4gEILQPDVI4I85jS+edvi6Ei1/eM8eP27OnFZ9Y+Udpa4CwyLQ3NMCSUc5DtfNz1IdreW3Z6iXDE8cl65OlMaV7XNhDC3sfPQh6FqkFGbPa/kURmt185YbddnA13CLoLNEmfxV6E0kNPi49QKlfd5jEcTjmE9HZOTzosEUu/uw0hjeMhSYc2ss2vgQWivtNQH52IbdktcKtE+W1sHuVYOXkl+zKOjPEn9v9h73HOnhiGdNp5GaVvR/wesLKWsavd9SECQUj05ATiyC5b+qiKEZEcSw9hmBArlVRYvZOPrTvVv6BZt3usv7fYJU58CPbxDDLItRRvhyE2BTIDvuSvAzMCsXv6g6SxEWFZNHgEvffsFXkPnEbz72r2k5ChKTbx+Ta62YcdeoTqs3EApaXFv1hNspoFkWkwbXS+DojOSRlk8HWSNoHORNXgFEvO2qkPjjayA476ngAS7ME2as8hWz5nwV1fNiZj5rlOEWguk3HsDfckBKjuDDGLICSdR0Uzyi8DRbJfGt8UxVFSt4OjFtsHbBjslf/7Qw6ugFD0grX55YEW0jqRiKyUSDAMmqtcM6fVwXUGEUMKs+dBzBO80L2d80pErS7lwVblJM+krbsLsREtXzbaLEkGmx+JYA==",
+      "key": "lmL0HwdJemLCoOuXqGq64NNhYtAVVpKyPD3u3F94d3Ws/TcLp1si/rZOlnizjlb/zEsb8e4aMC1yzfKFGBjkUeRsHvUQjZa9NDej6/H1sETt69ywQkfNQrCeE9zr55LeBRn+N1rCrUk0Vspgc2WkggWKRaEnauhMGGGZlmZiasumuAa5CAs9KOW1H5fkwy5zXSz8bU+lHjopSSx6mmCLZwqv6N8wXEJXRwvgOAZwC4Y6/Av6bInklf6I9WXYzYjotOfGYbreOcgPVimUHPAEWUV3duO9JGL576w/dr4JXqkXOuu33oo5mlHCAmMdM6POXJCR8ezK8NWlzM0oF6MOdg==",
+      "iv": "FbrE8pv0FQNOhZrRYiARs0AdTQghUzvkTdq0Iw1zwGt0nR2iz1naB9lhU/4DRhlhLdHp0iEJ7w3Wybj/gLqugpMD1OOdMzvBv0Otd4u8aJ8gv3QoLhRYHE/6bs88ze2b5AUHeZPne/aDaKpim2ia92ievsiv7Gkd7XGRnouoTt15TY0lggacXTYdUth8pW3z+7gGMXQaks99oTacex62HBe1EEX26gqm6olj5/xKOwviyznFlmxxvl+1Ch+9uXj3nmD514fUxN3PNu6UgjzLAK55KTMBJk4hP95qDLCikZ/ktKKORBmREXVBWoWZ0HIDi+vuDPbCaDf0dVZ8Oimo5Q=="
     }
   }
 }

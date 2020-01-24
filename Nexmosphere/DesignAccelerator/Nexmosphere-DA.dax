@@ -1,7 +1,7 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<Mashup ApiNumber="28" Name="Nexmosphere-DA" Description="Default DA for Nexmosphere" Category="Nexmosphere" Author="Intuiface" AuthorId="Intuiface" Icon="Nexmosphere-DA.png" OriginalLocalPath=".\Local" OriginalDataPath=".\Data" OriginalProcessID="17520" OriginalXpId="1-d996603b-f0a7-425c-b2e5-5499bc158f5a">
-  <MashupPresentation ContextAlias="CURRENT_PRESENTATION" Name="mashup_root_0" OriginalAbsoluteVisualPath="player://visuals/DA Nexmosphere">
-    <Presentation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xi="http://www.w3.org/2001/XInclude" xsi:noNamespaceSchemaLocation="http://schemas.intuilab.com/intuiface/api5/ip.xsd" Name="DA Nexmosphere" Id="" DataPath="" Language="" Width="1920" Height="1080" ShowLoadingIndicator="true" Platform="windows" ComposerVersion="6.4.1" ApiNumber="28" MinApiNumber="28" RequiredPlayerWindows="6.4.0" RequiredPlayerTablet="6.4.0" LastModificationDate="2019-10-01T14:38:10.4610069Z" SnapshotPath="player://data/Snapshots/default.png">
+<?xml version="1.0" encoding="utf-8"?>
+<Mashup ApiNumber="28" Name="Nexmosphere-DA" Description="Default DA for Nexmosphere" Category="Nexmosphere" Author="Intuiface" AuthorId="Intuiface" Icon="Nexmosphere-DA.png" OriginalLocalPath=".\Local" OriginalDataPath=".\Data" OriginalProcessID="1724" OriginalXpId="1-6eae383b-e7cc-4baa-a2d3-9caf1f2d73a3">
+  <MashupPresentation ContextAlias="CURRENT_PRESENTATION" Name="mashup_root_0" OriginalAbsoluteVisualPath="player://visuals/NexmosphereDAv2">
+    <Presentation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xi="http://www.w3.org/2001/XInclude" xsi:noNamespaceSchemaLocation="http://schemas.intuilab.com/intuiface/api5/ip.xsd" Name="NexmosphereDAv2" Id="" DataPath="" Language="" Width="1920" Height="1080" ShowLoadingIndicator="true" Platform="windows" ComposerVersion="6.5.1" ApiNumber="28" MinApiNumber="28" RequiredPlayerWindows="6.4.0" RequiredPlayerTablet="6.4.0" LastModificationDate="2020-01-23T10:54:38.8788862Z" SnapshotPath="player://data/Snapshots/default.png">
       <Layers />
       <Spaces />
       <SharedContracts />
@@ -11,10 +11,10 @@
       <Sequence />
     </Presentation>
   </MashupPresentation>
-  <MashupSpace ContextAlias="CURRENT_SPACE" Name="mashup_root_1" OriginalAbsoluteVisualPath="player://visuals/DA Nexmosphere/Scene 1">
+  <MashupSpace ContextAlias="CURRENT_SPACE" Name="mashup_root_1" OriginalAbsoluteVisualPath="player://visuals/NexmosphereDAv2/Scene 1">
     <Space Name="Scene 1" AutoReset="false" />
   </MashupSpace>
-  <MashupCollection Name="mashup_root_2" OriginalAbsoluteVisualPath="player://visuals/DA Nexmosphere/Scene 1/Layer 1/Default_template_for_Nexmosphere" CreateAsCollectionSibling="true">
+  <MashupCollection Name="mashup_root_2" OriginalAbsoluteVisualPath="player://visuals/NexmosphereDAv2/Scene 1/Layer 1/Default_template_for_Nexmosphere" CreateAsCollectionSibling="true">
     <Collection Name="Default_template_for_Nexmosphere" Visual="Group" Style="" Container="Static" ContainerStyle="">
       <Properties>
         <Property Type="Container" Name="MinWidth"><![CDATA[value:0]]></Property>
@@ -28,8 +28,8 @@
         <Property Type="Container" Name="Y"><![CDATA[value:540]]></Property>
         <Property Type="Visual" Name="InitialWidth"><![CDATA[value:600]]></Property>
         <Property Type="Container" Name="Width"><![CDATA[value:600]]></Property>
-        <Property Type="Visual" Name="InitialHeight"><![CDATA[value:940]]></Property>
-        <Property Type="Container" Name="Height"><![CDATA[value:940]]></Property>
+        <Property Type="Visual" Name="InitialHeight"><![CDATA[value:980]]></Property>
+        <Property Type="Container" Name="Height"><![CDATA[value:980]]></Property>
         <Property Type="Container" Name="Orientation"><![CDATA[value:0]]></Property>
       </Properties>
       <Asset Name="Background" Visual="DefaultRectangle" Style="" Container="Default" ContainerStyle="" Domain="value:Rectangle">
@@ -39,9 +39,9 @@
           <Property Type="Visual" Name="CornerRadius"><![CDATA[value:5]]></Property>
           <Property Type="Visual" Name="BackgroundColor"><![CDATA[value:#D9D1D1D1]]></Property>
           <Property Type="Container" Name="X"><![CDATA[value:300]]></Property>
-          <Property Type="Container" Name="Y"><![CDATA[value:470]]></Property>
+          <Property Type="Container" Name="Y"><![CDATA[value:490]]></Property>
           <Property Type="Container" Name="Width"><![CDATA[value:600]]></Property>
-          <Property Type="Container" Name="Height"><![CDATA[value:940]]></Property>
+          <Property Type="Container" Name="Height"><![CDATA[value:980]]></Property>
           <Property Type="Container" Name="Orientation"><![CDATA[value:0]]></Property>
         </Properties>
       </Asset>
@@ -71,11 +71,11 @@
       <Collection Name="Group Properties" Visual="Group" Style="" Container="Default" ContainerStyle="">
         <Properties>
           <Property Type="Container" Name="X"><![CDATA[value:300]]></Property>
-          <Property Type="Container" Name="Y"><![CDATA[value:177]]></Property>
+          <Property Type="Container" Name="Y"><![CDATA[value:197]]></Property>
           <Property Type="Visual" Name="InitialWidth"><![CDATA[value:600]]></Property>
           <Property Type="Container" Name="Width"><![CDATA[value:600]]></Property>
-          <Property Type="Visual" Name="InitialHeight"><![CDATA[value:183]]></Property>
-          <Property Type="Container" Name="Height"><![CDATA[value:183]]></Property>
+          <Property Type="Visual" Name="InitialHeight"><![CDATA[value:223]]></Property>
+          <Property Type="Container" Name="Height"><![CDATA[value:223]]></Property>
           <Property Type="Container" Name="Orientation"><![CDATA[value:0]]></Property>
         </Properties>
         <Asset Name="PROPERTIES" Visual="DefaultText" Style="" Container="Scale" ContainerStyle="" Domain="value:Text">
@@ -95,14 +95,14 @@
             <Property Type="Container" Name="Orientation"><![CDATA[value:0]]></Property>
           </Properties>
         </Asset>
-        <Asset Name="Label - COM  Serial Port Name" Visual="DefaultText" Container="Scale" ContainerStyle="" Domain="value:Text">
+        <Asset Name="Label - Serial Port Name (Windows)" Visual="DefaultText" Container="Scale" ContainerStyle="" Domain="value:Text">
           <Properties>
             <Property Type="Visual" Name="FontColor"><![CDATA[value:#FF262626]]></Property>
             <Property Type="Visual" Name="Font"><![CDATA[value:Verdana]]></Property>
             <Property Type="Visual" Name="Bold"><![CDATA[value:False]]></Property>
             <Property Type="Visual" Name="FontSize"><![CDATA[value:14]]></Property>
             <Property Type="Visual" Name="Alignment"><![CDATA[value:Right]]></Property>
-            <Property Type="Domain" Name="Text"><![CDATA[value:COM / Serial Port Name:]]></Property>
+            <Property Type="Domain" Name="Text"><![CDATA[value:Serial Port Name (Windows)]]></Property>
             <Property Type="Visual" Name="VerticalAlignment"><![CDATA[value:Center]]></Property>
             <Property Type="Container" Name="X"><![CDATA[value:117]]></Property>
             <Property Type="Container" Name="Y"><![CDATA[value:60]]></Property>
@@ -111,14 +111,19 @@
             <Property Type="Container" Name="Orientation"><![CDATA[value:0]]></Property>
           </Properties>
         </Asset>
-        <Asset Name="Value - COM  Serial Port Name" Visual="Text input" Style="" Container="Scale" ContainerStyle="" Domain="value:Text input">
+        <Asset Name="Value - Serial Port Name (Windows)" Visual="Text input" Style="" Container="Scale" ContainerStyle="" Domain="value:Text input">
           <Attachments>
             <EventTrigger EventType="Visual" EventName="EnterKeyPressed">
-              <InvokeService Target="mashup://visuals/mashup_root_2/Default_template_for_Nexmosphere/Group%20Properties/Value%20-%20COM%20%20Serial%20Port%20Name/" Type="Visual" Name="StopEdition" Delay="value:0.0" />
+              <InvokeService Target="mashup://visuals/mashup_root_2/Default_template_for_Nexmosphere/Group%20Properties/Value%20-%20Serial%20Port%20Name%20(Windows)/" Type="Visual" Name="StopEdition" Delay="value:0.0" />
+            </EventTrigger>
+            <EventTrigger EventType="Visual" EventName="StopEditing">
+              <InvokeService Target="mashup://externals/Nexmosphere/" Type="Domain" Name="SetPortName" Delay="value:0">
+                <ServiceValueParameter ParamName="Value" Value="mashup://visuals/mashup_root_2/Default_template_for_Nexmosphere/Group%20Properties/Value%20-%20Serial%20Port%20Name%20(Windows)/DomainComponent/Text" />
+              </InvokeService>
             </EventTrigger>
           </Attachments>
           <Properties>
-            <Property Type="Domain" Name="Text"><![CDATA[value:COM1]]></Property>
+            <Property Type="Domain" Name="Text"><![CDATA[mashup://externals/Nexmosphere/PortName]]></Property>
             <Property Type="Visual" Name="Font"><![CDATA[value:Verdana]]></Property>
             <Property Type="Visual" Name="FontColor"><![CDATA[value:#FF262626]]></Property>
             <Property Type="Visual" Name="FontSize"><![CDATA[value:14]]></Property>
@@ -147,6 +152,63 @@
             <Property Type="Container" Name="Orientation"><![CDATA[value:0]]></Property>
           </Properties>
         </Asset>
+        <Asset Name="Label - Serial Path (Android)" Visual="DefaultText" Container="Scale" ContainerStyle="" Domain="value:Text">
+          <Properties>
+            <Property Type="Visual" Name="FontColor"><![CDATA[value:#FF262626]]></Property>
+            <Property Type="Visual" Name="Font"><![CDATA[value:Verdana]]></Property>
+            <Property Type="Visual" Name="Bold"><![CDATA[value:False]]></Property>
+            <Property Type="Visual" Name="FontSize"><![CDATA[value:14]]></Property>
+            <Property Type="Visual" Name="Alignment"><![CDATA[value:Right]]></Property>
+            <Property Type="Domain" Name="Text"><![CDATA[value:Serial Port Path (Android)]]></Property>
+            <Property Type="Visual" Name="VerticalAlignment"><![CDATA[value:Center]]></Property>
+            <Property Type="Container" Name="X"><![CDATA[value:117]]></Property>
+            <Property Type="Container" Name="Y"><![CDATA[value:100]]></Property>
+            <Property Type="Container" Name="Width"><![CDATA[value:211]]></Property>
+            <Property Type="Container" Name="Height"><![CDATA[value:30]]></Property>
+            <Property Type="Container" Name="Orientation"><![CDATA[value:0]]></Property>
+          </Properties>
+        </Asset>
+        <Asset Name="Value - Serial Path (Android)" Visual="Text input" Style="" Container="Scale" ContainerStyle="" Domain="value:Text input">
+          <Attachments>
+            <EventTrigger EventType="Visual" EventName="EnterKeyPressed">
+              <InvokeService Target="mashup://visuals/mashup_root_2/Default_template_for_Nexmosphere/Group%20Properties/Value%20-%20Serial%20Path%20(Android)/" Type="Visual" Name="StopEdition" Delay="value:0.0" />
+            </EventTrigger>
+            <EventTrigger EventType="Visual" EventName="StopEditing">
+              <InvokeService Target="mashup://externals/Nexmosphere/" Type="Domain" Name="SetPortNameOtherPlatforms" Delay="value:0">
+                <ServiceValueParameter ParamName="Value" Value="mashup://visuals/mashup_root_2/Default_template_for_Nexmosphere/Group%20Properties/Value%20-%20Serial%20Path%20(Android)/DomainComponent/Text" />
+              </InvokeService>
+            </EventTrigger>
+          </Attachments>
+          <Properties>
+            <Property Type="Domain" Name="Text"><![CDATA[mashup://externals/Nexmosphere/PortNameOtherPlatforms]]></Property>
+            <Property Type="Visual" Name="Font"><![CDATA[value:Verdana]]></Property>
+            <Property Type="Visual" Name="FontColor"><![CDATA[value:#FF262626]]></Property>
+            <Property Type="Visual" Name="FontSize"><![CDATA[value:14]]></Property>
+            <Property Type="Visual" Name="InstructionFont">
+              <Typeface>
+                <Family>Segoe UI</Family>
+                <Stretch>normal</Stretch>
+                <Weight>400</Weight>
+                <Style>italic</Style>
+              </Typeface>
+            </Property>
+            <Property Type="Visual" Name="InstructionFontSize"><![CDATA[value:25]]></Property>
+            <Property Type="Visual" Name="Keyboard"><![CDATA[value:UNDEFINED]]></Property>
+            <Property Type="Visual" Name="BackgroundColor"><![CDATA[value:#FFBABABA]]></Property>
+            <Property Type="Visual" Name="EditionBackgroundColor"><![CDATA[value:#FFCFCFCF]]></Property>
+            <Property Type="Visual" Name="InstructionFontColor"><![CDATA[value:#FF848484]]></Property>
+            <Property Type="Visual" Name="InstructionItalic"><![CDATA[value:True]]></Property>
+            <Property Type="Visual" Name="Bold"><![CDATA[value:True]]></Property>
+            <Property Type="Visual" Name="SelectionAreaColor"><![CDATA[value:#FF595959]]></Property>
+            <Property Type="Visual" Name="BorderColor"><![CDATA[value:#FFE8E8E8]]></Property>
+            <Property Type="Visual" Name="EditionBorderColor"><![CDATA[value:#FFE8E8E8]]></Property>
+            <Property Type="Container" Name="X"><![CDATA[value:274]]></Property>
+            <Property Type="Container" Name="Y"><![CDATA[value:100]]></Property>
+            <Property Type="Container" Name="Width"><![CDATA[value:80]]></Property>
+            <Property Type="Container" Name="Height"><![CDATA[value:30]]></Property>
+            <Property Type="Container" Name="Orientation"><![CDATA[value:0]]></Property>
+          </Properties>
+        </Asset>
         <Asset Name="Label - Auto Reconnect" Visual="DefaultText" Container="Scale" ContainerStyle="" Domain="value:Text">
           <Properties>
             <Property Type="Visual" Name="FontColor"><![CDATA[value:#FF262626]]></Property>
@@ -157,13 +219,25 @@
             <Property Type="Domain" Name="Text"><![CDATA[value:Auto Reconnect:]]></Property>
             <Property Type="Visual" Name="VerticalAlignment"><![CDATA[value:Center]]></Property>
             <Property Type="Container" Name="X"><![CDATA[value:118]]></Property>
-            <Property Type="Container" Name="Y"><![CDATA[value:100]]></Property>
+            <Property Type="Container" Name="Y"><![CDATA[value:140]]></Property>
             <Property Type="Container" Name="Width"><![CDATA[value:210]]></Property>
             <Property Type="Container" Name="Height"><![CDATA[value:30]]></Property>
             <Property Type="Container" Name="Orientation"><![CDATA[value:0]]></Property>
           </Properties>
         </Asset>
         <Asset Name="Btn - Auto Reconnect" Visual="ToggleButton" Style="Simple Toggle Button" Container="Scale" ContainerStyle="" Domain="value:ToggleButton">
+          <Attachments>
+            <EventTrigger EventType="Domain" EventName="Checked">
+              <InvokeService Target="mashup://externals/Nexmosphere/" Type="Domain" Name="SetAutoReconnect" Delay="value:0">
+                <ServiceValueParameter ParamName="Value" Value="value:True" />
+              </InvokeService>
+            </EventTrigger>
+            <EventTrigger EventType="Domain" EventName="Unchecked">
+              <InvokeService Target="mashup://externals/Nexmosphere/" Type="Domain" Name="SetAutoReconnect" Delay="value:0">
+                <ServiceValueParameter ParamName="Value" Value="value:False" />
+              </InvokeService>
+            </EventTrigger>
+          </Attachments>
           <Properties>
             <Property Type="Visual" Name="Font"><![CDATA[value:Verdana]]></Property>
             <Property Type="Visual" Name="FontSize"><![CDATA[value:14]]></Property>
@@ -175,12 +249,12 @@
             <Property Type="Visual" Name="FontColor"><![CDATA[value:#FF262626]]></Property>
             <Property Type="Visual" Name="PressedVeilColor"><![CDATA[value:#80000000]]></Property>
             <Property Type="Visual" Name="CheckedVeilColor"><![CDATA[value:#7383D3F6]]></Property>
-            <Property Type="Domain" Name="IsChecked"><![CDATA[value:True]]></Property>
+            <Property Type="Domain" Name="IsChecked"><![CDATA[mashup://externals/Nexmosphere/AutoReconnect]]></Property>
             <Property Type="Visual" Name="Shadow"><![CDATA[value:False]]></Property>
             <Property Type="Visual" Name="Bold"><![CDATA[value:True]]></Property>
             <Property Type="Visual" Name="TextHorizontalAlignment"><![CDATA[value:Center]]></Property>
             <Property Type="Container" Name="X"><![CDATA[value:274]]></Property>
-            <Property Type="Container" Name="Y"><![CDATA[value:100]]></Property>
+            <Property Type="Container" Name="Y"><![CDATA[value:140]]></Property>
             <Property Type="Container" Name="Width"><![CDATA[value:80]]></Property>
             <Property Type="Container" Name="Height"><![CDATA[value:30]]></Property>
             <Property Type="Container" Name="Orientation"><![CDATA[value:0]]></Property>
@@ -196,7 +270,7 @@
             <Property Type="Domain" Name="Text"><![CDATA[value:Is connected:]]></Property>
             <Property Type="Visual" Name="VerticalAlignment"><![CDATA[value:Center]]></Property>
             <Property Type="Container" Name="X"><![CDATA[value:118]]></Property>
-            <Property Type="Container" Name="Y"><![CDATA[value:142]]></Property>
+            <Property Type="Container" Name="Y"><![CDATA[value:182]]></Property>
             <Property Type="Container" Name="Width"><![CDATA[value:210]]></Property>
             <Property Type="Container" Name="Height"><![CDATA[value:30]]></Property>
             <Property Type="Container" Name="Orientation"><![CDATA[value:0]]></Property>
@@ -212,7 +286,7 @@
             <Property Type="Visual" Name="FontSize"><![CDATA[value:14]]></Property>
             <Property Type="Visual" Name="VerticalAlignment"><![CDATA[value:Center]]></Property>
             <Property Type="Container" Name="X"><![CDATA[value:286]]></Property>
-            <Property Type="Container" Name="Y"><![CDATA[value:142]]></Property>
+            <Property Type="Container" Name="Y"><![CDATA[value:182]]></Property>
             <Property Type="Container" Name="Width"><![CDATA[value:102]]></Property>
             <Property Type="Container" Name="Height"><![CDATA[value:30]]></Property>
             <Property Type="Container" Name="Orientation"><![CDATA[value:0]]></Property>
@@ -226,7 +300,7 @@
           <Property Type="Visual" Name="CornerRadius"><![CDATA[value:0]]></Property>
           <Property Type="Visual" Name="BackgroundColor"><![CDATA[value:#D9343333]]></Property>
           <Property Type="Container" Name="X"><![CDATA[value:300]]></Property>
-          <Property Type="Container" Name="Y"><![CDATA[value:268]]></Property>
+          <Property Type="Container" Name="Y"><![CDATA[value:308]]></Property>
           <Property Type="Container" Name="Width"><![CDATA[value:600]]></Property>
           <Property Type="Container" Name="Height"><![CDATA[value:1]]></Property>
           <Property Type="Container" Name="Orientation"><![CDATA[value:0]]></Property>
@@ -235,7 +309,7 @@
       <Collection Name="Group Actions" Visual="Group" Style="" Container="Default" ContainerStyle="">
         <Properties>
           <Property Type="Container" Name="X"><![CDATA[value:300]]></Property>
-          <Property Type="Container" Name="Y"><![CDATA[value:433]]></Property>
+          <Property Type="Container" Name="Y"><![CDATA[value:473]]></Property>
           <Property Type="Visual" Name="InitialWidth"><![CDATA[value:600]]></Property>
           <Property Type="Container" Name="Width"><![CDATA[value:600]]></Property>
           <Property Type="Visual" Name="InitialHeight"><![CDATA[value:332]]></Property>
@@ -689,7 +763,7 @@
           <Property Type="Visual" Name="CornerRadius"><![CDATA[value:0]]></Property>
           <Property Type="Visual" Name="BackgroundColor"><![CDATA[value:#D9343333]]></Property>
           <Property Type="Container" Name="X"><![CDATA[value:300]]></Property>
-          <Property Type="Container" Name="Y"><![CDATA[value:600]]></Property>
+          <Property Type="Container" Name="Y"><![CDATA[value:640]]></Property>
           <Property Type="Container" Name="Width"><![CDATA[value:600]]></Property>
           <Property Type="Container" Name="Height"><![CDATA[value:1]]></Property>
           <Property Type="Container" Name="Orientation"><![CDATA[value:0]]></Property>
@@ -698,7 +772,7 @@
       <Collection Name="Group Triggers" Visual="Group" Style="" Container="Default" ContainerStyle="">
         <Properties>
           <Property Type="Container" Name="X"><![CDATA[value:300]]></Property>
-          <Property Type="Container" Name="Y"><![CDATA[value:650]]></Property>
+          <Property Type="Container" Name="Y"><![CDATA[value:690]]></Property>
           <Property Type="Visual" Name="InitialWidth"><![CDATA[value:600]]></Property>
           <Property Type="Container" Name="Width"><![CDATA[value:600]]></Property>
           <Property Type="Visual" Name="InitialHeight"><![CDATA[value:100]]></Property>
@@ -784,7 +858,7 @@
           <Property Type="Visual" Name="CornerRadius"><![CDATA[value:0]]></Property>
           <Property Type="Visual" Name="BackgroundColor"><![CDATA[value:#D9343333]]></Property>
           <Property Type="Container" Name="X"><![CDATA[value:300]]></Property>
-          <Property Type="Container" Name="Y"><![CDATA[value:700]]></Property>
+          <Property Type="Container" Name="Y"><![CDATA[value:740]]></Property>
           <Property Type="Container" Name="Width"><![CDATA[value:600]]></Property>
           <Property Type="Container" Name="Height"><![CDATA[value:1]]></Property>
           <Property Type="Container" Name="Orientation"><![CDATA[value:0]]></Property>
@@ -793,7 +867,7 @@
       <Collection Name="Group Activity" Visual="Group" Style="" Container="Default" ContainerStyle="">
         <Properties>
           <Property Type="Container" Name="X"><![CDATA[value:300]]></Property>
-          <Property Type="Container" Name="Y"><![CDATA[value:820]]></Property>
+          <Property Type="Container" Name="Y"><![CDATA[value:860]]></Property>
           <Property Type="Visual" Name="InitialWidth"><![CDATA[value:600]]></Property>
           <Property Type="Container" Name="Width"><![CDATA[value:600]]></Property>
           <Property Type="Visual" Name="InitialHeight"><![CDATA[value:240]]></Property>
@@ -837,7 +911,7 @@
     </Collection>
   </MashupCollection>
   <MashupExternalAsset ContextAlias="ASSOCIATED_IA">
-    <ExternalAsset Name="Nexmosphere" DescriptorPath="player://resources/026e3d6a-f9f7-4707-b2de-03ef4d4093c6" ExternalAssetName="Nexmosphere">
+    <ExternalAsset Name="Nexmosphere" DescriptorPath="player://resources/4476497e-f7f4-469f-8258-494eb39eca8d" ExternalAssetName="Nexmosphere">
       <Attachments>
         <PresentationEventTrigger EventType="Domain" EventName="XScriptCommand" TypeList="All">
           <InvokeService Target="mashup://visuals/mashup_root_2/Default_template_for_Nexmosphere/Group%20Triggers/Value%20-%20Last%20X-Script%20command/" Type="Domain" Name="SetText" Delay="value:0">
@@ -856,25 +930,30 @@
         </PresentationEventTrigger>
       </Attachments>
       <Properties>
-        <Property Type="Domain" Name="PortName"><![CDATA[mashup://visuals/mashup_root_2/Default_template_for_Nexmosphere/Group%20Properties/Value%20-%20COM%20%20Serial%20Port%20Name/DomainComponent/Text]]></Property>
-        <Property Type="Domain" Name="AutoReconnect"><![CDATA[mashup://visuals/mashup_root_2/Default_template_for_Nexmosphere/Group%20Properties/Btn%20-%20Auto%20Reconnect/DomainComponent/IsChecked]]></Property>
+        <Property Type="Domain" Name="PortName"><![CDATA[value:COM1]]></Property>
+        <Property Type="Domain" Name="AutoReconnect"><![CDATA[value:True]]></Property>
+        <Property Type="Domain" Name="PortNameOtherPlatforms"><![CDATA[value:/usb]]></Property>
       </Properties>
     </ExternalAsset>
   </MashupExternalAsset>
   <MashupResource>
-    <Resource Key="17fe7904-af2d-4ce5-9fdb-806752bf053e" Type="uri" Length="14455" LastModificationDate="2019-09-26T08:19:04.6084187Z" Archive="SmallFiles.zip" DefaultValue="player://data/Images/Logo_nexmosphere.png">
-      <Alternate Value="player://data/Generated/9615b4d1842f8471e9409a86de188d2b.png" Width="267" Height="50" Length="12555" LastModificationDate="2019-10-01T14:37:16.9435359Z" Archive="SmallFiles.zip" />
+    <Resource Key="17fe7904-af2d-4ce5-9fdb-806752bf053e" Type="uri" Length="14455" LastModificationDate="2020-01-16T13:42:34Z" Archive="SmallFiles.zip" DefaultValue="player://data/Images/Logo_nexmosphere.png">
+      <Alternate Value="player://data/Generated/e6b7478f30bd322cf78e1fce92426c8f.png" Width="267" Height="50" Length="12555" LastModificationDate="2020-01-23T10:39:00.4620255Z" Archive="SmallFiles.zip" />
     </Resource>
   </MashupResource>
   <MashupResource>
-    <Resource Key="026e3d6a-f9f7-4707-b2de-03ef4d4093c6" Type="uri" Length="5994" LastModificationDate="2019-10-01T10:11:56.496183Z" DefaultValue="player://data/InterfaceAssets/Nexmosphere/Nexmosphere.ifd">
+    <Resource Key="4476497e-f7f4-469f-8258-494eb39eca8d" Type="uri" Length="7190" LastModificationDate="2020-01-22T10:47:50Z" DefaultValue="player://data/InterfaceAssets/Nexmosphere/Nexmosphere.ifd">
       <Dependencies>
-        <Dependency URI="player://data/InterfaceAssets/Nexmosphere/Nexmosphere-DA.dax" Length="67105" LastModificationDate="2019-10-01T14:18:49.0369701Z" Archive="SmallFiles.zip" />
-        <Dependency URI="player://data/InterfaceAssets/Nexmosphere/Nexmosphere-DA.png" Length="3879" LastModificationDate="2019-09-26T08:25:59.32473Z" Archive="SmallFiles.zip" />
-        <Dependency URI="player://data/InterfaceAssets/Nexmosphere/Nexmosphere-icon.png" Length="5622" LastModificationDate="2019-08-26T15:26:19.1697585Z" Archive="SmallFiles.zip" />
-        <Dependency URI="player://data/InterfaceAssets/Nexmosphere/Nexmosphere.dll" Length="14848" LastModificationDate="2019-10-01T14:23:30.0537597Z" Archive="SmallFiles.zip" />
-        <Dependency URI="player://data/InterfaceAssets/Nexmosphere/Nexmosphere.pdb" Length="30208" LastModificationDate="2019-10-01T14:23:29.9957631Z" Archive="SmallFiles.zip" />
-        <Dependency URI="player://data/InterfaceAssets/Nexmosphere/Data/Images/Logo_nexmosphere.png" Length="14455" LastModificationDate="2019-09-26T08:19:04.6084187Z" Archive="SmallFiles.zip" />
+        <Dependency URI="player://data/InterfaceAssets/Nexmosphere/EventEmitter.js" Length="16499" LastModificationDate="2020-01-16T13:42:34Z" Archive="SmallFiles.zip" />
+        <Dependency URI="player://data/InterfaceAssets/Nexmosphere/Moment.js" Length="155565" LastModificationDate="2020-01-16T13:42:34Z" />
+        <Dependency URI="player://data/InterfaceAssets/Nexmosphere/Nexmosphere-DA.dax" Length="72387" LastModificationDate="2020-01-21T13:32:02Z" Archive="SmallFiles.zip" />
+        <Dependency URI="player://data/InterfaceAssets/Nexmosphere/Nexmosphere-DA.png" Length="4162" LastModificationDate="2020-01-21T13:32:02Z" Archive="SmallFiles.zip" />
+        <Dependency URI="player://data/InterfaceAssets/Nexmosphere/Nexmosphere-icon.png" Length="5622" LastModificationDate="2020-01-16T13:42:34Z" Archive="SmallFiles.zip" />
+        <Dependency URI="player://data/InterfaceAssets/Nexmosphere/Nexmosphere.dll" Length="20896" LastModificationDate="2020-01-22T10:47:56Z" Archive="SmallFiles.zip" />
+        <Dependency URI="player://data/InterfaceAssets/Nexmosphere/Nexmosphere.js" Length="13349" LastModificationDate="2020-01-21T16:58:34Z" Archive="SmallFiles.zip" />
+        <Dependency URI="player://data/InterfaceAssets/Nexmosphere/StringPolyfill.js" Length="653" LastModificationDate="2020-01-21T09:51:42Z" Archive="SmallFiles.zip" />
+        <Dependency URI="player://data/InterfaceAssets/Nexmosphere/XScriptCommand.js" Length="1554" LastModificationDate="2020-01-21T16:58:34Z" Archive="SmallFiles.zip" />
+        <Dependency URI="player://data/InterfaceAssets/Nexmosphere/Data/Images/Logo_nexmosphere.png" Length="14455" LastModificationDate="2020-01-16T13:42:34Z" Archive="SmallFiles.zip" />
       </Dependencies>
     </Resource>
   </MashupResource>

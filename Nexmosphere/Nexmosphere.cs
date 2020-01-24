@@ -129,6 +129,31 @@ namespace Nexmosphere
 
         #endregion
 
+        #region PortNameOtherPlatforms
+
+        /// <summary>
+        /// Internal reference on the PortNameOtherPlatforms property
+        /// </summary>
+        protected string m_refPortNameOtherPlatforms = "/usb/001";
+
+        /// <summary>
+        /// Gets or sets the PortNameOtherPlatforms property.
+        /// </summary>
+        public string PortNameOtherPlatforms
+        {
+            get { return m_refPortNameOtherPlatforms; }
+            set
+            {
+                if (m_refPortNameOtherPlatforms != value)
+                {
+                    m_refPortNameOtherPlatforms = value;
+                    NotifyPropertyChanged("PortNameOtherPlatforms");
+                }
+            }
+        }
+
+        #endregion
+
         #region IsConnected
 
         /// <summary>
