@@ -33,14 +33,14 @@ XScriptCommand.prototype._parse = function () {
     var matches;
 
     // For generic S-Script command partern
-    if ((matches = this.xScript.matchAll(this.xScriptCommandPattern)) != null) {
+    if ((matches = matchAll(this.xScript, this.xScriptCommandPattern)) != null) {
         this.type = matches[0][1];
         this.address = matches[0][2];
         this.format = matches[0][3];
         this.command = matches[0][4];
     }
     // For specific X-Script command XR ANTENNA DRIVER partern
-    else if ((matches = this.xScript.matchAll(this.xrXScriptCommandPattern)) != null)
+    else if ((matches = matchAll(this.xScript, this.xrXScriptCommandPattern)) != null)
     {
         this.type = matches[0][1];
         this.command = matches[0][2];
@@ -52,3 +52,19 @@ XScriptCommand.prototype._parse = function () {
 
     return true;
 };
+
+/**
+ * The matchAll() method returns an iterator of all results matching a string against a regular expression, including capturing groups
+ * Source: http://cwestblog.com/2013/02/26/javascript-string-prototype-matchall/
+ */
+function matchAll(string, regexp) {
+    const matches = [];
+    string.replace(regexp, function () {
+        const arr = ([]).slice.call(arguments, 0);
+        const extras = arr.splice(-2);
+        arr.index = extras[0];
+        arr.input = extras[1];
+        matches.push(arr);
+    });
+    return matches.length ? matches : null;
+}

@@ -7,7 +7,7 @@ Nexmosphere.prototype.constructor = Nexmosphere;
 function Nexmosphere() {
     // intuiface object is a service that is automatically loaded when launching XP
     // usbSerialService is the service used for usb serial communication, and included the following functions:
-    // list, requestPermission, open, write, close, registerReadCallback, isConnected
+    // list, open, write, close, registerReadCallback, isConnected
     this._usbSerialService = intuiface.get('usbSerialService', this);
 
     /* Properties from IFD */
@@ -23,11 +23,11 @@ function Nexmosphere() {
     this.isConnected = false;
 
     /* Configuration of serial port */
-    // Nexmosphere USB to Serial controller Product ID
+    // Nexmosphere USB to Serial controller Product ID (for android)
     this.PID = 8963;
-    // Nexmosphere USB to Serial controller Vendor ID
+    // Nexmosphere USB to Serial controller Vendor ID (for android)
     this.VID = 1659;
-    // Nexmosphere USB to Serial controller Driver name
+    // Nexmosphere USB to Serial controller Driver name (for android)
     this.driver = 'ProlificSerialDriver';
     // Transmission speed
     this.baudRate = 115200;
@@ -56,7 +56,7 @@ function Nexmosphere() {
     // Check connection status
     this.isCheckConnection = false;
     // ID of timer
-    this.checkConnectionTimeoutID = false;
+    this.checkConnectionTimeoutID = null;
 
     this._addOutputLog('Start Nexmosphere Interface Asset');
 }
@@ -69,17 +69,21 @@ Nexmosphere.prototype.OpenSerialPort = function () {
 
     this._addOutputLog('Try to open Serial Port ' + this.portNameOtherPlatforms);
 
-    // Request permission to use USB port
     // Open the serial port
-    // Register a callback to read the received message
-    // Handle error
-    this._requestPermission()
-        .then(function () { self._open() })
-        .then(function () { self._registerCallback() })
-        .catch(function (error) {
+    this._open(function (error) {
+        if (error) {
             self._addOutputLog('Could not open the path port. Most likely it is already in use, has been removed, or is unavailable.');
             self._addOutputLog('Exception message: ' + error);
+            return;
+        }
+        // Register a callback to read the received message
+        self._registerCallback(function (error) {
+            if (error) {
+                self._addOutputLog('Failed to register callback.');
+                self._addOutputLog('Exception message: ' + error);
+            }
         });
+    });
 };
 
 /**
@@ -95,13 +99,10 @@ Nexmosphere.prototype.CloseSerialPort = function () {
 
     // Closing the serial port
     self._usbSerialService.close(
-        {
-            deviceName: self.portNameOtherPlatforms
-        },
         function (error, result) {
             // Handle error
             if (error) {
-                return self._addOutputLog('Failed to close the path port: ' + result);
+                return self._addOutputLog('Failed to close the path port: ' + error);
             }
 
             self.isConnected = false;
@@ -129,14 +130,11 @@ Nexmosphere.prototype.SendXScriptCommand_FullLine = function (command) {
 
     // Sending the X-Script command to the serial port
     self._usbSerialService.write(
-        {
-            deviceName: self.portNameOtherPlatforms,
-            data: command + self.EOL
-        },
-        function (error, result) {
+        command + self.EOL,
+        function (error) {
             // Handle error
             if (error) {
-                return self._addOutputLog('Failed to send X-Script command: ' + result);
+                return self._addOutputLog('Failed to send X-Script command: ' + error);
             }
 
             self._addOutputLog('Send X-Script command: ' + xScriptCommand.xScript);
@@ -215,25 +213,20 @@ Nexmosphere.prototype._addOutputLog = function (log) {
 
 /**
  * Handle the auto reconnect
- * If autoReconnect is checked and serial port loss connection, every 10 seconds we try to reconnect
+ * If autoReconnect is checked and serial port loss connection, every 3 seconds we try to reconnect
  * A limit of 10 tries before cancellation
  */
 Nexmosphere.prototype._autoReconnect = function () {
     const self = this;
 
-    if (!this.autoReconnect || this.autoReconnectCount > 10 || this.isConnected) {
+    if (this.autoReconnectTimeoutID || !this.autoReconnect || this.autoReconnectCount > 10 || this.isConnected) {
         return;
-    }
-
-    if (this.autoReconnectTimeoutID) {
-        clearTimeout( this.autoReconnectTimeoutID);
-        this.autoReconnectTimeoutID = null;
     }
 
     self.OpenSerialPort();
     self.autoReconnectCount++;
 
-    // Initialise a timeout of 3000ms to recall this same function
+    // Initialise a timeout of 3s to recall this same function
     self.autoReconnectTimeoutID = setTimeout(function () {
         self.autoReconnectTimeoutID = null;
         self._autoReconnect();
@@ -247,33 +240,25 @@ Nexmosphere.prototype._autoReconnect = function () {
 Nexmosphere.prototype._checkConnection = function () {
     const self = this;
 
-    if (!this.isCheckConnection){
+    if (!this.isCheckConnection) {
         return;
     }
 
-    if (this.checkConnectionTimeoutID) {
-        clearTimeout(this.checkConnectionTimeoutID);
-        this.checkConnectionTimeoutID = null;
-    }
-
     // Checking the status of connection of the serial port
-    self._usbSerialService.isConnected({
-        deviceName: self.portNameOtherPlatforms
-    }, function (error, result) {
-        // Transform the result to a boolean
-        const isConnected = result === 'true';
+    self._usbSerialService.isConnected(
+        function (error, isConnected) {
+            // Only emit if new state if different to the older
+            if (isConnected !== self.isConnected) {
+                self.isConnected = isConnected;
+                // Send an event to refresh view property
+                self.emit('isConnectedChanged', [self.isConnected]);
+            }
 
-        // Only emit if new state if different to the older
-        if (isConnected !== self.isConnected) {
-            self.isConnected = isConnected;
-            // Send an event to refresh view property
-            self.emit('isConnectedChanged', [self.isConnected]);
+            self._autoReconnect();
         }
+    );
 
-        self._autoReconnect();
-    });
-
-    // Initialise a timeout of 1000ms to recall this same function
+    // Initialise a timeout of 1s to recall this same function
     self.checkConnectionTimeoutID = setTimeout(function () {
         self.checkConnectionTimeoutID = null;
         self._checkConnection();
@@ -281,90 +266,61 @@ Nexmosphere.prototype._checkConnection = function () {
 };
 
 /**
- * Request permission to be able to open a serial port connection
- */
-Nexmosphere.prototype._requestPermission = function () {
-    const self = this;
-
-    return new Promise(function (resolve, reject) {
-        // Requesting permission to use USB port
-        self._usbSerialService.requestPermission(
-            {
-                deviceName: self.portNameOtherPlatforms,
-                pid: self.PID,
-                vid: self.VID,
-                driver: self.driver
-            },
-            function (error, result) {
-                // Handle error
-                if (error) {
-                    reject(result);
-                }
-
-                resolve();
-            }
-        );
-    });
-};
-
-/**
  * Open serial port connection
  */
-Nexmosphere.prototype._open = function () {
+Nexmosphere.prototype._open = function (callback) {
     const self = this;
 
-    return new Promise(function (resolve, reject) {
-        // Opening serial port
-        self._usbSerialService.open(
-            {
-                deviceName: self.portNameOtherPlatforms,
-                baudRate: self.baudRate,
-                dataBits: self.dataBits,
-                stopBits: self.stopBits,
-                parity: self.parity,
-                dtr: self.DTR,
-                rts: self.RTS,
-                sleepOnPause: self.sleepOnPause
-            },
-            function (error, result) {
-                // Handle error
-                if (error) {
-                    reject(result);
-                }
-
-                self._addOutputLog('Port ' + self.portNameOtherPlatforms + ' opened');
-
-                self.isConnected = false;
-                // Send an event to refresh view property
-                self.emit('isConnectedChanged', [self.isConnected]);
-
-                // Reset counter of auto reconnect
-                self.autoReconnectCount = 0;
-                // Allow to check connection status
-                self.isCheckConnection = true;
-                // Start checking connection status
-                self._checkConnection();
-
-                resolve();
+    // Opening serial port
+    self._usbSerialService.open(
+        {
+            port: self.portNameOtherPlatforms,
+            pid: self.PID,
+            vid: self.VID,
+            driver: self.driver,
+            baudRate: self.baudRate,
+            dataBits: self.dataBits,
+            stopBits: self.stopBits,
+            parity: self.parity,
+            dtr: self.DTR,
+            rts: self.RTS,
+            sleepOnPause: self.sleepOnPause
+        },
+        function (error, result) {
+            // Handle error
+            if (error) {
+                return callback(error);
             }
-        );
-    });
+
+            self._addOutputLog('Port ' + self.portNameOtherPlatforms + ' opened');
+
+            self.isConnected = false;
+            // Send an event to refresh view property
+            self.emit('isConnectedChanged', [self.isConnected]);
+
+            // Reset counter of auto reconnect
+            self.autoReconnectCount = 0;
+            // Allow to check connection status
+            self.isCheckConnection = true;
+            // Start checking connection status
+            self._checkConnection();
+
+            callback(null, result);
+        }
+    );
 };
 
 /**
  * Registering a callback to be able to receive messages
  */
-Nexmosphere.prototype._registerCallback = function () {
+Nexmosphere.prototype._registerCallback = function (callback) {
     const self = this;
 
     // Registering a callback to the usb serial service to be automatically notified of new messages
     self._usbSerialService.registerReadCallback(
-        {
-            deviceName: self.portNameOtherPlatforms
-        },
-        function (error, message) {
-            // Decode the received message
-            self.serialBuffer += arrayBufferToString(message);
+        function (message) {
+            // Add the received message to the serial buffer
+            self.serialBuffer += message;
 
             // var instead let, because for Interface Asset, the Intuiface Player don't use the last Javascript engine
             var indexEOL;
@@ -387,14 +343,12 @@ Nexmosphere.prototype._registerCallback = function () {
                     self._addOutputLog('Received an invalid X-Script command: ' + command);
                 }
             }
-        });
+        },
+        function (error, result) {
+            if (error) {
+                return callback(error);
+            }
+            callback(null, result);
+        }
+    );
 };
-
-/**
- * Transform an Array Buffer to a String
- *
- * @return {String} Buffer
- */
-function arrayBufferToString(buf) {
-    return String.fromCharCode.apply(null, new Int8Array(buf));
-}

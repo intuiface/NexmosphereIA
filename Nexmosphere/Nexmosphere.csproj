@@ -58,7 +58,6 @@
     <Content Include="JS\EventEmitter.js" />
     <Content Include="JS\Moment.js" />
     <Content Include="JS\Nexmosphere.js" />
-    <Content Include="JS\StringPolyfill.js" />
     <Content Include="JS\XScriptCommand.js" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

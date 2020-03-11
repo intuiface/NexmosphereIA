@@ -46,7 +46,7 @@ To build this project, follow these steps:
 * Build the solution in **Release** mode,
 * Navigate to the root of the project and look for a folder named **OutputInterfaceAsset** which contains the Nexmosphere Interface Asset.
 
-_Building this project will also copy the JavaScript code required for running the Interface Asset on Android devices_
+_Building this project will also copy the JavaScript code required for running the Interface Asset on Android and BrightSign devices_
 
 If you want to make your own Interface Asset enhancements, review the following articles in the [Intuiface Help Center](https://support.intuiface.com/hc/en-us):
 

@@ -1,7 +1,7 @@
-<?xml version="1.0" encoding="utf-8"?>
-<Mashup ApiNumber="28" Name="Nexmosphere-DA" Description="Default DA for Nexmosphere" Category="Nexmosphere" Author="Intuiface" AuthorId="Intuiface" Icon="Nexmosphere-DA.png" OriginalLocalPath=".\Local" OriginalDataPath=".\Data" OriginalProcessID="1724" OriginalXpId="1-6eae383b-e7cc-4baa-a2d3-9caf1f2d73a3">
-  <MashupPresentation ContextAlias="CURRENT_PRESENTATION" Name="mashup_root_0" OriginalAbsoluteVisualPath="player://visuals/NexmosphereDAv2">
-    <Presentation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xi="http://www.w3.org/2001/XInclude" xsi:noNamespaceSchemaLocation="http://schemas.intuilab.com/intuiface/api5/ip.xsd" Name="NexmosphereDAv2" Id="" DataPath="" Language="" Width="1920" Height="1080" ShowLoadingIndicator="true" Platform="windows" ComposerVersion="6.5.1" ApiNumber="28" MinApiNumber="28" RequiredPlayerWindows="6.4.0" RequiredPlayerTablet="6.4.0" LastModificationDate="2020-01-23T10:54:38.8788862Z" SnapshotPath="player://data/Snapshots/default.png">
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mashup ApiNumber="28" Name="Nexmosphere-DA" Description="Default DA for Nexmosphere" Category="Nexmosphere" Author="Intuiface" AuthorId="Intuiface" Icon="Nexmosphere-DA.png" OriginalLocalPath=".\Local" OriginalDataPath=".\Data" OriginalProcessID="14796" OriginalXpId="1-61259a4e-bfec-49af-8def-b919666614fb">
+  <MashupPresentation ContextAlias="CURRENT_PRESENTATION" Name="mashup_root_0" OriginalAbsoluteVisualPath="player://visuals/BrightSign">
+    <Presentation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xi="http://www.w3.org/2001/XInclude" xsi:noNamespaceSchemaLocation="http://schemas.intuilab.com/intuiface/api5/ip.xsd" Name="BrightSign" Id="" DataPath="" Language="" Width="1920" Height="1080" ShowLoadingIndicator="true" Platform="windows" ComposerVersion="6.5.1" ApiNumber="28" MinApiNumber="28" RequiredPlayerWindows="6.4.0" RequiredPlayerTablet="6.4.0" LastModificationDate="2020-03-09T09:40:08.0108567Z" SnapshotPath="player://data/Snapshots/default.png">
       <Layers />
       <Spaces />
       <SharedContracts />
@@ -11,10 +11,10 @@
       <Sequence />
     </Presentation>
   </MashupPresentation>
-  <MashupSpace ContextAlias="CURRENT_SPACE" Name="mashup_root_1" OriginalAbsoluteVisualPath="player://visuals/NexmosphereDAv2/Scene 1">
-    <Space Name="Scene 1" AutoReset="false" />
+  <MashupSpace ContextAlias="CURRENT_SPACE" Name="mashup_root_1" OriginalAbsoluteVisualPath="player://visuals/BrightSign/Scene 2">
+    <Space Name="Scene 2" AutoReset="false" />
   </MashupSpace>
-  <MashupCollection Name="mashup_root_2" OriginalAbsoluteVisualPath="player://visuals/NexmosphereDAv2/Scene 1/Layer 1/Default_template_for_Nexmosphere" CreateAsCollectionSibling="true">
+  <MashupCollection Name="mashup_root_2" OriginalAbsoluteVisualPath="player://visuals/BrightSign/Scene 2/Layer 1/Default_template_for_Nexmosphere" CreateAsCollectionSibling="true">
     <Collection Name="Default_template_for_Nexmosphere" Visual="Group" Style="" Container="Static" ContainerStyle="">
       <Properties>
         <Property Type="Container" Name="MinWidth"><![CDATA[value:0]]></Property>
@@ -24,8 +24,8 @@
         <Property Type="Visual" Name="ItemWidth"><![CDATA[value:1200]]></Property>
         <Property Type="Visual" Name="ItemHeight"><![CDATA[value:600]]></Property>
         <Property Type="Visual" Name="ShowFeedback"><![CDATA[value:False]]></Property>
-        <Property Type="Container" Name="X"><![CDATA[value:960]]></Property>
-        <Property Type="Container" Name="Y"><![CDATA[value:540]]></Property>
+        <Property Type="Container" Name="X"><![CDATA[value:978]]></Property>
+        <Property Type="Container" Name="Y"><![CDATA[value:535]]></Property>
         <Property Type="Visual" Name="InitialWidth"><![CDATA[value:600]]></Property>
         <Property Type="Container" Name="Width"><![CDATA[value:600]]></Property>
         <Property Type="Visual" Name="InitialHeight"><![CDATA[value:980]]></Property>
@@ -104,9 +104,9 @@
             <Property Type="Visual" Name="Alignment"><![CDATA[value:Right]]></Property>
             <Property Type="Domain" Name="Text"><![CDATA[value:Serial Port Name (Windows)]]></Property>
             <Property Type="Visual" Name="VerticalAlignment"><![CDATA[value:Center]]></Property>
-            <Property Type="Container" Name="X"><![CDATA[value:117]]></Property>
+            <Property Type="Container" Name="X"><![CDATA[value:156]]></Property>
             <Property Type="Container" Name="Y"><![CDATA[value:60]]></Property>
-            <Property Type="Container" Name="Width"><![CDATA[value:211]]></Property>
+            <Property Type="Container" Name="Width"><![CDATA[value:288]]></Property>
             <Property Type="Container" Name="Height"><![CDATA[value:30]]></Property>
             <Property Type="Container" Name="Orientation"><![CDATA[value:0]]></Property>
           </Properties>
@@ -145,25 +145,25 @@
             <Property Type="Visual" Name="SelectionAreaColor"><![CDATA[value:#FF595959]]></Property>
             <Property Type="Visual" Name="BorderColor"><![CDATA[value:#FFE8E8E8]]></Property>
             <Property Type="Visual" Name="EditionBorderColor"><![CDATA[value:#FFE8E8E8]]></Property>
-            <Property Type="Container" Name="X"><![CDATA[value:274]]></Property>
+            <Property Type="Container" Name="X"><![CDATA[value:366]]></Property>
             <Property Type="Container" Name="Y"><![CDATA[value:60]]></Property>
             <Property Type="Container" Name="Width"><![CDATA[value:80]]></Property>
             <Property Type="Container" Name="Height"><![CDATA[value:30]]></Property>
             <Property Type="Container" Name="Orientation"><![CDATA[value:0]]></Property>
           </Properties>
         </Asset>
-        <Asset Name="Label - Serial Path (Android)" Visual="DefaultText" Container="Scale" ContainerStyle="" Domain="value:Text">
+        <Asset Name="Label - Serial Port Path (Android, BrightSign)" Visual="DefaultText" Container="Scale" ContainerStyle="" Domain="value:Text">
           <Properties>
             <Property Type="Visual" Name="FontColor"><![CDATA[value:#FF262626]]></Property>
             <Property Type="Visual" Name="Font"><![CDATA[value:Verdana]]></Property>
             <Property Type="Visual" Name="Bold"><![CDATA[value:False]]></Property>
             <Property Type="Visual" Name="FontSize"><![CDATA[value:14]]></Property>
             <Property Type="Visual" Name="Alignment"><![CDATA[value:Right]]></Property>
-            <Property Type="Domain" Name="Text"><![CDATA[value:Serial Port Path (Android)]]></Property>
+            <Property Type="Domain" Name="Text"><![CDATA[value:Serial Port Path (Android, BrightSign)]]></Property>
             <Property Type="Visual" Name="VerticalAlignment"><![CDATA[value:Center]]></Property>
-            <Property Type="Container" Name="X"><![CDATA[value:117]]></Property>
+            <Property Type="Container" Name="X"><![CDATA[value:156]]></Property>
             <Property Type="Container" Name="Y"><![CDATA[value:100]]></Property>
-            <Property Type="Container" Name="Width"><![CDATA[value:211]]></Property>
+            <Property Type="Container" Name="Width"><![CDATA[value:288]]></Property>
             <Property Type="Container" Name="Height"><![CDATA[value:30]]></Property>
             <Property Type="Container" Name="Orientation"><![CDATA[value:0]]></Property>
           </Properties>
@@ -202,7 +202,7 @@
             <Property Type="Visual" Name="SelectionAreaColor"><![CDATA[value:#FF595959]]></Property>
             <Property Type="Visual" Name="BorderColor"><![CDATA[value:#FFE8E8E8]]></Property>
             <Property Type="Visual" Name="EditionBorderColor"><![CDATA[value:#FFE8E8E8]]></Property>
-            <Property Type="Container" Name="X"><![CDATA[value:274]]></Property>
+            <Property Type="Container" Name="X"><![CDATA[value:366]]></Property>
             <Property Type="Container" Name="Y"><![CDATA[value:100]]></Property>
             <Property Type="Container" Name="Width"><![CDATA[value:80]]></Property>
             <Property Type="Container" Name="Height"><![CDATA[value:30]]></Property>
@@ -218,9 +218,9 @@
             <Property Type="Visual" Name="Alignment"><![CDATA[value:Right]]></Property>
             <Property Type="Domain" Name="Text"><![CDATA[value:Auto Reconnect:]]></Property>
             <Property Type="Visual" Name="VerticalAlignment"><![CDATA[value:Center]]></Property>
-            <Property Type="Container" Name="X"><![CDATA[value:118]]></Property>
+            <Property Type="Container" Name="X"><![CDATA[value:156]]></Property>
             <Property Type="Container" Name="Y"><![CDATA[value:140]]></Property>
-            <Property Type="Container" Name="Width"><![CDATA[value:210]]></Property>
+            <Property Type="Container" Name="Width"><![CDATA[value:288]]></Property>
             <Property Type="Container" Name="Height"><![CDATA[value:30]]></Property>
             <Property Type="Container" Name="Orientation"><![CDATA[value:0]]></Property>
           </Properties>
@@ -253,7 +253,7 @@
             <Property Type="Visual" Name="Shadow"><![CDATA[value:False]]></Property>
             <Property Type="Visual" Name="Bold"><![CDATA[value:True]]></Property>
             <Property Type="Visual" Name="TextHorizontalAlignment"><![CDATA[value:Center]]></Property>
-            <Property Type="Container" Name="X"><![CDATA[value:274]]></Property>
+            <Property Type="Container" Name="X"><![CDATA[value:366]]></Property>
             <Property Type="Container" Name="Y"><![CDATA[value:140]]></Property>
             <Property Type="Container" Name="Width"><![CDATA[value:80]]></Property>
             <Property Type="Container" Name="Height"><![CDATA[value:30]]></Property>
@@ -269,9 +269,9 @@
             <Property Type="Visual" Name="Alignment"><![CDATA[value:Right]]></Property>
             <Property Type="Domain" Name="Text"><![CDATA[value:Is connected:]]></Property>
             <Property Type="Visual" Name="VerticalAlignment"><![CDATA[value:Center]]></Property>
-            <Property Type="Container" Name="X"><![CDATA[value:118]]></Property>
+            <Property Type="Container" Name="X"><![CDATA[value:156]]></Property>
             <Property Type="Container" Name="Y"><![CDATA[value:182]]></Property>
-            <Property Type="Container" Name="Width"><![CDATA[value:210]]></Property>
+            <Property Type="Container" Name="Width"><![CDATA[value:288]]></Property>
             <Property Type="Container" Name="Height"><![CDATA[value:30]]></Property>
             <Property Type="Container" Name="Orientation"><![CDATA[value:0]]></Property>
           </Properties>
@@ -285,7 +285,7 @@
             <Property Type="Visual" Name="Bold"><![CDATA[value:True]]></Property>
             <Property Type="Visual" Name="FontSize"><![CDATA[value:14]]></Property>
             <Property Type="Visual" Name="VerticalAlignment"><![CDATA[value:Center]]></Property>
-            <Property Type="Container" Name="X"><![CDATA[value:286]]></Property>
+            <Property Type="Container" Name="X"><![CDATA[value:377]]></Property>
             <Property Type="Container" Name="Y"><![CDATA[value:182]]></Property>
             <Property Type="Container" Name="Width"><![CDATA[value:102]]></Property>
             <Property Type="Container" Name="Height"><![CDATA[value:30]]></Property>
@@ -911,7 +911,7 @@
     </Collection>
   </MashupCollection>
   <MashupExternalAsset ContextAlias="ASSOCIATED_IA">
-    <ExternalAsset Name="Nexmosphere" DescriptorPath="player://resources/4476497e-f7f4-469f-8258-494eb39eca8d" ExternalAssetName="Nexmosphere">
+    <ExternalAsset Name="Nexmosphere" DescriptorPath="player://resources/60afe240-b2f1-4bd2-ad52-6afbeeaf7c4d" ExternalAssetName="Nexmosphere">
       <Attachments>
         <PresentationEventTrigger EventType="Domain" EventName="XScriptCommand" TypeList="All">
           <InvokeService Target="mashup://visuals/mashup_root_2/Default_template_for_Nexmosphere/Group%20Triggers/Value%20-%20Last%20X-Script%20command/" Type="Domain" Name="SetText" Delay="value:0">
@@ -937,23 +937,22 @@
     </ExternalAsset>
   </MashupExternalAsset>
   <MashupResource>
-    <Resource Key="17fe7904-af2d-4ce5-9fdb-806752bf053e" Type="uri" Length="14455" LastModificationDate="2020-01-16T13:42:34Z" Archive="SmallFiles.zip" DefaultValue="player://data/Images/Logo_nexmosphere.png">
-      <Alternate Value="player://data/Generated/e6b7478f30bd322cf78e1fce92426c8f.png" Width="267" Height="50" Length="12555" LastModificationDate="2020-01-23T10:39:00.4620255Z" Archive="SmallFiles.zip" />
+    <Resource Key="17fe7904-af2d-4ce5-9fdb-806752bf053e" Type="uri" Length="14455" LastModificationDate="2020-01-27T12:58:40Z" Archive="SmallFiles.zip" DefaultValue="player://data/Images/Logo_nexmosphere.png">
+      <Alternate Value="player://data/Generated/f02638b267f1213325db9f16ffa90446.png" Width="267" Height="50" Length="12555" LastModificationDate="2020-03-09T09:34:01.2958427Z" Archive="SmallFiles.zip" />
     </Resource>
   </MashupResource>
   <MashupResource>
-    <Resource Key="4476497e-f7f4-469f-8258-494eb39eca8d" Type="uri" Length="7190" LastModificationDate="2020-01-22T10:47:50Z" DefaultValue="player://data/InterfaceAssets/Nexmosphere/Nexmosphere.ifd">
+    <Resource Key="60afe240-b2f1-4bd2-ad52-6afbeeaf7c4d" Type="uri" Length="7178" LastModificationDate="2020-03-05T14:42:13.2532247Z" DefaultValue="player://data/InterfaceAssets/Nexmosphere/Nexmosphere.ifd">
       <Dependencies>
-        <Dependency URI="player://data/InterfaceAssets/Nexmosphere/EventEmitter.js" Length="16499" LastModificationDate="2020-01-16T13:42:34Z" Archive="SmallFiles.zip" />
-        <Dependency URI="player://data/InterfaceAssets/Nexmosphere/Moment.js" Length="155565" LastModificationDate="2020-01-16T13:42:34Z" />
-        <Dependency URI="player://data/InterfaceAssets/Nexmosphere/Nexmosphere-DA.dax" Length="72387" LastModificationDate="2020-01-21T13:32:02Z" Archive="SmallFiles.zip" />
-        <Dependency URI="player://data/InterfaceAssets/Nexmosphere/Nexmosphere-DA.png" Length="4162" LastModificationDate="2020-01-21T13:32:02Z" Archive="SmallFiles.zip" />
-        <Dependency URI="player://data/InterfaceAssets/Nexmosphere/Nexmosphere-icon.png" Length="5622" LastModificationDate="2020-01-16T13:42:34Z" Archive="SmallFiles.zip" />
-        <Dependency URI="player://data/InterfaceAssets/Nexmosphere/Nexmosphere.dll" Length="20896" LastModificationDate="2020-01-22T10:47:56Z" Archive="SmallFiles.zip" />
-        <Dependency URI="player://data/InterfaceAssets/Nexmosphere/Nexmosphere.js" Length="13349" LastModificationDate="2020-01-21T16:58:34Z" Archive="SmallFiles.zip" />
-        <Dependency URI="player://data/InterfaceAssets/Nexmosphere/StringPolyfill.js" Length="653" LastModificationDate="2020-01-21T09:51:42Z" Archive="SmallFiles.zip" />
-        <Dependency URI="player://data/InterfaceAssets/Nexmosphere/XScriptCommand.js" Length="1554" LastModificationDate="2020-01-21T16:58:34Z" Archive="SmallFiles.zip" />
-        <Dependency URI="player://data/InterfaceAssets/Nexmosphere/Data/Images/Logo_nexmosphere.png" Length="14455" LastModificationDate="2020-01-16T13:42:34Z" Archive="SmallFiles.zip" />
+        <Dependency URI="player://data/InterfaceAssets/Nexmosphere/EventEmitter.js" Length="16499" LastModificationDate="2020-01-27T12:58:40Z" Archive="SmallFiles.zip" />
+        <Dependency URI="player://data/InterfaceAssets/Nexmosphere/Moment.js" Length="155565" LastModificationDate="2020-01-27T12:58:40Z" />
+        <Dependency URI="player://data/InterfaceAssets/Nexmosphere/Nexmosphere-DA.dax" Length="73770" LastModificationDate="2020-01-27T12:58:40Z" Archive="SmallFiles.zip" />
+        <Dependency URI="player://data/InterfaceAssets/Nexmosphere/Nexmosphere-DA.png" Length="4162" LastModificationDate="2020-01-27T12:58:40Z" Archive="SmallFiles.zip" />
+        <Dependency URI="player://data/InterfaceAssets/Nexmosphere/Nexmosphere-icon.png" Length="5622" LastModificationDate="2020-01-27T12:58:40Z" Archive="SmallFiles.zip" />
+        <Dependency URI="player://data/InterfaceAssets/Nexmosphere/Nexmosphere.dll" Length="20896" LastModificationDate="2020-01-27T13:02:00Z" Archive="SmallFiles.zip" />
+        <Dependency URI="player://data/InterfaceAssets/Nexmosphere/Data/Images/Logo_nexmosphere.png" Length="14455" LastModificationDate="2020-01-27T12:58:40Z" Archive="SmallFiles.zip" />
+        <Dependency URI="player://data/InterfaceAssets/Nexmosphere/Nexmosphere.js" Length="12030" LastModificationDate="2020-02-28T14:26:22.4352114Z" Archive="SmallFiles.zip" />
+        <Dependency URI="player://data/InterfaceAssets/Nexmosphere/XScriptCommand.js" Length="2116" LastModificationDate="2020-03-06T09:24:21.9968827Z" Archive="SmallFiles.zip" />
       </Dependencies>
     </Resource>
   </MashupResource>

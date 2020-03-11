@@ -1,9 +1,9 @@
 {
   "kind": "discovery#restDescription",
-  "discoveryVersion": "v2",
+  "discoveryVersion": "v2.1",
   "id": "Nexmosphere",
   "name": "Nexmosphere",
-  "version": "2.0",
+  "version": "2.1",
   "protocol": "native",
   "baseUrl": null,
   "basePath": "Nexmosphere",
@@ -12,7 +12,6 @@
     "EventEmitter.js",
     "Moment.js",
     "XScriptCommand.js",
-    "StringPolyfill.js",
     "Nexmosphere.js",
     "Nexmosphere.dll"
   ],
@@ -30,9 +29,9 @@
           "description": "Serial Port Name (ex: COM1)."
         },
         "PortNameOtherPlatforms": {
-          "title": "Serial Port Path (Android)",
+          "title": "Serial Port Path (Android, BrightSign)",
           "type": "string",
-          "description": "Serial Port Path (ex: /usb/001)."
+          "description": "Serial Port Path (ex: /usb/001, 2)."
         },
         "AutoReconnect": {
           "title": "Auto reconnect",
@@ -156,14 +155,14 @@
     }
   },
   "signature": {
-    "hash": "0Mg6LHlNoPWQoRHJMWjh4ulDZj7EmcGEEW6ONhKVX/4=",
+    "hash": "nltaESm1d2a5bpKZrLW205WarGZaFHowUoXjPBWUK+4=",
     "signatureData": {
       "editionLevel": "FREE",
       "hostname": "SAPIN2",
       "v": 2,
-      "data": "nlzvWQZThy5yU+dnrQqFO08n79bfpid3qpTihv1TX8GPyTZ1dqi0meIwy1T29fQfn4X7YpGdWeJPRs0oplh8H5qdVV3uHaronSpeIxXuHbG50xcZ0FBCQsfFhmP21A8BWAqN78DlIVT6mi/njBWLWawXsd3iL8ZqT3bc5E3Vft2JKKYZKZ6X6rlvD+pTAAbxrS6jyOLarTu3po/enqY1y5c920NUEQ7rZGcpzb2vsqbvSFdaQuTRpTGmgkQK58ghrJVQEysTacSTg8t49tZWnzyMZi4yHLQBFhWY8TWqf4HYWhoRQYqdutY1xzr4zpxQOwi2yHDW9n6n3Wc9D+W+xqI41C0rpf3ohfEgDgO+RRlCoyUsVvDNGwq9dYp4brSjvtZ9f3Yxb/JzZOOJbS6mVrrD4gEILQPDVI4I85jS+edvi6Ei1/eM8eP27OnFZ9Y+Udpa4CwyLQ3NMCSUc5DtfNz1IdreW3Z6iXDE8cl65OlMaV7XNhDC3sfPQh6FqkFGbPa/kURmt185YbddnA13CLoLNEmfxV6E0kNPi49QKlfd5jEcTjmE9HZOTzosEUu/uw0hjeMhSYc2ss2vgQWivtNQH52IbdktcKtE+W1sHuVYOXkl+zKOjPEn9v9h73HOnhiGdNp5GaVvR/wesLKWsavd9SECQUj05ATiyC5b+qiKEZEcSw9hmBArlVRYvZOPrTvVv6BZt3usv7fYJU58CPbxDDLItRRvhyE2BTIDvuSvAzMCsXv6g6SxEWFZNHgEvffsFXkPnEbz72r2k5ChKTbx+Ta62YcdeoTqs3EApaXFv1hNspoFkWkwbXS+DojOSRlk8HWSNoHORNXgFEvO2qkPjjayA476ngAS7ME2as8hWz5nwV1fNiZj5rlOEWguk3HsDfckBKjuDDGLICSdR0Uzyi8DRbJfGt8UxVFSt4OjFtsHbBjslf/7Qw6ugFD0grX55YEW0jqRiKyUSDAMmqtcM6fVwXUGEUMKs+dBzBO80L2d80pErS7lwVblJM+krbsLsREtXzbaLEkGmx+JYA==",
-      "key": "lmL0HwdJemLCoOuXqGq64NNhYtAVVpKyPD3u3F94d3Ws/TcLp1si/rZOlnizjlb/zEsb8e4aMC1yzfKFGBjkUeRsHvUQjZa9NDej6/H1sETt69ywQkfNQrCeE9zr55LeBRn+N1rCrUk0Vspgc2WkggWKRaEnauhMGGGZlmZiasumuAa5CAs9KOW1H5fkwy5zXSz8bU+lHjopSSx6mmCLZwqv6N8wXEJXRwvgOAZwC4Y6/Av6bInklf6I9WXYzYjotOfGYbreOcgPVimUHPAEWUV3duO9JGL576w/dr4JXqkXOuu33oo5mlHCAmMdM6POXJCR8ezK8NWlzM0oF6MOdg==",
-      "iv": "FbrE8pv0FQNOhZrRYiARs0AdTQghUzvkTdq0Iw1zwGt0nR2iz1naB9lhU/4DRhlhLdHp0iEJ7w3Wybj/gLqugpMD1OOdMzvBv0Otd4u8aJ8gv3QoLhRYHE/6bs88ze2b5AUHeZPne/aDaKpim2ia92ievsiv7Gkd7XGRnouoTt15TY0lggacXTYdUth8pW3z+7gGMXQaks99oTacex62HBe1EEX26gqm6olj5/xKOwviyznFlmxxvl+1Ch+9uXj3nmD514fUxN3PNu6UgjzLAK55KTMBJk4hP95qDLCikZ/ktKKORBmREXVBWoWZ0HIDi+vuDPbCaDf0dVZ8Oimo5Q=="
+      "data": "oRvaB4w6e5fWRXrhjtv/TWICM4e1CdESesvxYSt4L6s1JzkHsAyuwN3+g/t4oa1kh3rstx+YzyVGcaKUyPV4yBZjzeUj6mMm47n6ca5Ji4Yb68AFIQIYO+FtiGWzpdMTuJXr9ivu1OMAEglPHbjUb2oStDQygL9tLuBDwm35AVLwyfoLaXLtt2oLRe2GOajta+aLosSGdMi2tEgBfydloOj1VwI2ut1suGOJgibOmZQkOAmX2+CbImONTcsYQl6pn8R9gLKbj/S7lkH6q6MuBJrb/MhQMvZ9kyyPKjBCogPK5lqj58oPnITxToGaKNCFiOTRt2b6+6XRJ4tFV5hnbiEklBenf8CX3qv4j7iYxm5hd5bk81yZQzWQI+C6KFFQTrcynOyN8ENFoBk6YSloBgiKJmONU2Y8pZybMVSTE1wC1kbPXUMStxiA47e56VaXVQZLfdKjFYbzwP37n1kXngtA2/RDkEMs+KyOowl4VKH5d2F5QzgmtJibEF2l2lhwN7lZpPCapoxDCshWNgeFfXxRgtCuHDVos+TV8iKoH0VsCnp6LQgPnnOfPYlnbwSuIYy1SlNMPGFrReK1bMhhk2wSwZCJoq7ajA6BCDwlCw3xP1oQ1Y+cSD1fix1VwGcL7Xs3cuEk5z9TKSdlXldwj/kduO+rRweBR9M6/rnR7wyW+y6oV8gQyaqv32UUeo278gZFiyeGBLFZBd+gI+U88rFrmDoI6y4Cm/Rr+GGGPNb053ngfzV/1uqOp0O9GRNtpbF0JsWooBg7Q6FtwEuA4CUA1MgdBTqd7n9AcfUoxZwjoo4FdQ2hdp2M9bavM8vPiCA9Q6akBwxwHm4S4C+EeSTJc/HLuzuGGIbuBrF/2TQmxDS2DqnWy02HHstdU+6wamr8yAq7g/KjhhBpHqoL9IwpHfMfh9Dv22MBKFDAMGS+rMYIxHsgk1sRXlgw6+8hnxGYaf+1h1nDDPeXeyIhqWTgHdyTj5E9prKEKPv9XGs3Wim5BuwaWfruqM5RmM896aKEe321xYaJz3rymMYz9g==",
+      "key": "pkZxHTyAMII6Z/tVulIIgis2oaEhlS2QcWdxAARcHWZiSEbYvjZe5nXbCJb5mxTqut9ISS/Fa+ulVglFeZXGO28wTuYEyQH6mDO3fhspR2PzRlu4jUBkQozEGtohVhmB+MgxiUsZoOSJ+0g7CWDlwDi3byggeKPMp6ZyBQ15jjXS0RxbYtVuo/ypzL0l0BqWI4b5LdZM7fwX5EA3iRDN3AvIeBnVu+VO9FbhnmJUXicQuN+VuxRsSr+JcqMMUiIIiFG+jS78dX7FbyTZtnVPwRhncW1ZMTcb/2pHLAr6+gMagAvak8Q8sKzE9eBj7nA9oqlvfqv1hhme861cPCB3jg==",
+      "iv": "nIB2MHu9wKzTvwJTKfPUFUHYIcihr6bHhfDELtG/KraWaMGchNbxIJKVu6jQtzlHa3nn21Fr6o8XD6hg/Mz4p7ranETEopeZJwZXwrA7WUSKhKk2JxL9oJpyZTMqhE2WP0orhljFdhpDjO2YDiBA2Zph9EFLZSBK/Td2S8WxFAFly9OHJ812SshkKiYqBXI6QoZFizzCXu9ysEkAJCwzc/4UneQjuKZJCo3qiksQsWyr8VmMTBIC13z/6wU+1T7M9I3niYlQ6ieLtcQy1/CO25IqPxyYsZQiS5Vf1wYqW4sMphrhkBefbs0+WRzjmyupTI0KpEaHqR3JjMFlR56XUQ=="
     }
   }
 }
