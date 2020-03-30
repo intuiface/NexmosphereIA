@@ -6,6 +6,7 @@ The [Nexmosphere](https://nexmosphere.com) Interface Asset enables you to commun
 
 This Interface Asset was developed to communicate with all Nexmosphere controllers:
 * [XN RANGE | NANO CONTROLLERS](https://nexmosphere.com/product-category/xn-nano/)
+* [XC RANGE | COMPACT CONTROLLERS](https://nexmosphere.com/product-category/xc-compact-controllers/)
 * [XM RANGE | MODULAR CONTROLLERS](https://nexmosphere.com/product-category/xm-range/)
 
 Meaning it handles all of the following elements:
