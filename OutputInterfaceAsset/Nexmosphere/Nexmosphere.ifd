@@ -3,7 +3,7 @@
   "discoveryVersion": "v2.1",
   "id": "Nexmosphere",
   "name": "Nexmosphere",
-  "version": "2.1",
+  "version": "2.2",
   "protocol": "native",
   "baseUrl": null,
   "basePath": "Nexmosphere",

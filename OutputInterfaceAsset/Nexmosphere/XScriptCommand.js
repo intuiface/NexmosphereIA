@@ -5,9 +5,9 @@
  */
 function XScriptCommand(xScript) {
     // Regex pattern for generic X-Script command
-    this.xScriptCommandPattern = /^(X|G|S|D)([0-9]{3})(A|B|S)\[(\S*)\]$/;
+    this.xScriptCommandPattern = /^(X|G|S|D)([0-9]{3})(A|B|S)\[(.*)\]$/;
     // Regex pattern for specific XR ANTENNA DRIVER X-Script command
-    this.xrXScriptCommandPattern = /^(XR)\[(\S*)\]$/;
+    this.xrXScriptCommandPattern = /^(XR)\[(.*)\]$/;
 
     // X-Script command string
     this.xScript = xScript;
