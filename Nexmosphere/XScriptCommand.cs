@@ -11,12 +11,12 @@ namespace Nexmosphere
         /// <summary>
         /// Regex pattern for generic X-Script command
         /// </summary>
-        private static string XScriptCommandPattern = @"^(X|G|S|D)([0-9]{3})(A|B|S)\[(\S*)\]$";
+        private static string XScriptCommandPattern = @"^(X|G|S|D)([0-9]{3})(A|B|S)\[(.*)\]$";
 
         /// <summary>
         /// Regex pattern for specific XR ANTENNA DRIVER X-Script command
         /// </summary>
-        private static string XrXScriptCommandPattern = @"^(XR)\[(\S*)\]$";
+        private static string XrXScriptCommandPattern = @"^(XR)\[(.*)\]$";
 
         #endregion
 
