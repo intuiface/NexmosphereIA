@@ -32,7 +32,7 @@ To add a modified Nexmosphere Interface Asset into an Intuiface experience, foll
 
 * Close all running instances of **Intuiface Composer**.
 * Download the [latest released package here](https://github.com/intuiface/NexmosphereIA/releases).
-* Extract the archive, open the resulting OutputInterfaceAsset folder, and copy the **Nexmosphere** folder to the path "[Drive]:\Users\\[UserName]\Documents\Intuiface\Interface Assets".
+* Extract the archive, open the resulting **OutputInterfaceAsset** folder, and copy the **Nexmosphere** folder to the path "[Drive]:\Users\\[UserName]\Documents\Intuiface\Interface Assets".
 * Launch **Intuiface Composer** and open your project.
 * Open the Interface Asset panel and select the **Add an Interface Asset** option. When you enter "Nexmosphere" in the search bar, you should see the **Nexmosphere** Interface Asset.
 
